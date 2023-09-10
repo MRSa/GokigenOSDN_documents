@@ -35,9 +35,8 @@ GOKIGENプロジェクトの[プライバシーポリシー](PrivacyPolicy.md)�
 よろしければお試しください。
 
 ------------------------------
-
-## [紙相撲マシン ： PaperSumoBattleField](https://osdn.net/projects/gokigen/wiki/PaperSumoBattleField)
-「[紙相撲マシン](https://osdn.net/projects/gokigen/wiki/PaperSumoBattleField)」は、「紙相撲」を [Android Open Accessory Development Kit, ADK](http://developer.android.com/guide/topics/usb/adk.html)) を使って、ちょっぴり盛り上げるしかけを作ってみたものです。
+## [紙相撲マシン ： PaperSumoBattleField](PaperSumoBattleField/Readme.md)
+「[紙相撲マシン](PaperSumoBattleField/Readme.md)」は、「紙相撲」を [Android Open Accessory Development Kit, ADK](http://developer.android.com/guide/topics/usb/adk.html)) を使って、ちょっぴり盛り上げるしかけを作ってみたものです。
 このマシンは、[Google Developer Day 2011 Japan](http://www.google.com/events/developerday/2011/tokyo/)の Open Call - Android ADK コーナーで展示をさせて頂きました。([参考：Google Japan Developer Relations Blogの記事](http://googledevjp.blogspot.com/2011/10/google-developer-day-2011-japan-open.html))
 
 観覧してくださった皆様、また、こういった展示の機会を与えてくださった googleの方に御礼申し上げます。本当に本当にありがとうございました。
