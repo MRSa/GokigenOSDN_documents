@@ -5,7 +5,7 @@
 ------------------------------
 
 ## [プライバシーポリシー](PrivacyPolicy.md)
-GOKIGENプロジェクトの[プライバシーポリシー](PrivacyPolicy.md)です。
+[GOKIGENプロジェクト](https://osdn.net/projects/gokigen/wiki/PrivacyPolicy)の[プライバシーポリシー](PrivacyPolicy.md)です。
 
 ------------------------------
 
