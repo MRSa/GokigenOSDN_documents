@@ -52,8 +52,9 @@
 
 ------------------------------
 
-## [桃太郎からの挑戦状](https://osdn.net/projects/gokigen/wiki/Okaken)
+## [桃太郎からの挑戦状](Okaken/Readme.md)
 岡山に関係する４択問題を出題するクイズゲームです。
+* https://osdn.net/projects/gokigen/wiki/Okaken
 
 ------------------------------
 
