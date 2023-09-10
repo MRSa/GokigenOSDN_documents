@@ -37,7 +37,7 @@
 --------------------------------
 
 ## ソースコード
-ソースコードはOSDN本プロジェクトのCVSリポジトリに格納しています。ご自由に参照・ご利用ください。
+ソースコードはOSDN本プロジェクトのCVSリポジトリに格納しています。ご自由に参照・ご利用ください。(アクセスできなかったので、GitHubに移しました。)
 
 --------------------------------
 
@@ -69,4 +69,4 @@ https://osdn.net/projects/gokigen/wiki/PaperSumoBattleField
 
 --------------------------------
 
-* The primary web page is the 'https://osdn.net/projects/gokigen/wiki/TheWarikan'.
+* The primary web page is the 'https://osdn.net/projects/gokigen/wiki/PaperSumoBattleField'.
