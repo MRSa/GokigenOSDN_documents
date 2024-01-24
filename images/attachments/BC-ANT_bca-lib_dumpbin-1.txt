@@ -1,0 +1,955 @@
+Microsoft (R) COFF/PE Dumper Version 10.00.40219.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file BCA_Lib.lib
+
+File Type: LIBRARY
+
+Archive member name at 8: /               
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+     6C9 size
+correct header end
+
+    55 public symbols
+
+      E22 __IMPORT_DESCRIPTOR_BCA_Lib
+     104C __NULL_IMPORT_DESCRIPTOR
+     1182 BCA_Lib_NULL_THUNK_DATA
+     194C _BCA_OpenDevice@4
+     194C __imp__BCA_OpenDevice@4
+     1874 _BCA_Init@4
+     1874 __imp__BCA_Init@4
+     1B20 _BCA_RegisterSendFunc@12
+     1B20 __imp__BCA_RegisterSendFunc@12
+     1AA8 _BCA_RegisterReceiveFunc@12
+     1AA8 __imp__BCA_RegisterReceiveFunc@12
+     19BA _BCA_RegisterEventFunc@12
+     19BA __imp__BCA_RegisterEventFunc@12
+     18DC _BCA_OpenChannel@40
+     18DC __imp__BCA_OpenChannel@40
+     171A _BCA_CloseChannel@8
+     171A __imp__BCA_CloseChannel@8
+     1CF0 _BCA_SendData@16
+     1CF0 __imp__BCA_SendData@16
+     1C00 _BCA_SendAcknowledgedData@16
+     1C00 __imp__BCA_SendAcknowledgedData@16
+     1C7A _BCA_SendBurstTransfer@16
+     1C7A __imp__BCA_SendBurstTransfer@16
+     1B96 _BCA_Reset@4
+     1B96 __imp__BCA_Reset@4
+     178A _BCA_CloseDevice@4
+     178A __imp__BCA_CloseDevice@4
+     1DD4 _BCA_SetTransmitPower@8
+     1DD4 __imp__BCA_SetTransmitPower@8
+     1D5E _BCA_SetChannelTxPower@12
+     1D5E __imp__BCA_SetChannelTxPower@12
+     1A30 _BCA_RegisterPairingFunc@12
+     1A30 __imp__BCA_RegisterPairingFunc@12
+     1E48 _BCA_StartPairing@20
+     1E48 __imp__BCA_StartPairing@20
+     1EBA _BCA_StopPairing@4
+     1EBA __imp__BCA_StopPairing@4
+     17FA _BCA_GetPairingDeviceInfo@20
+     17FA __imp__BCA_GetPairingDeviceInfo@20
+     1626 __imp_??_7noncopyable@bc@@6B@
+     15B0 __imp_??_7init_checker@bc@@6B@
+     152E ??4init_checker@bc@@QAEAAV01@ABV01@@Z
+     152E __imp_??4init_checker@bc@@QAEAAV01@ABV01@@Z
+     134C ??0init_checker@bc@@QAE@ABV01@@Z
+     134C __imp_??0init_checker@bc@@QAE@ABV01@@Z
+     1440 ??1init_checker@bc@@MAE@XZ
+     1440 __imp_??1init_checker@bc@@MAE@XZ
+     12D4 ??0init_checker@bc@@IAE@XZ
+     12D4 __imp_??0init_checker@bc@@IAE@XZ
+     169A ?initCheck@init_checker@bc@@QBEJXZ
+     169A __imp_?initCheck@init_checker@bc@@QBEJXZ
+     14B8 ??1noncopyable@bc@@MAE@XZ
+     14B8 __imp_??1noncopyable@bc@@MAE@XZ
+     13CA ??0noncopyable@bc@@IAE@XZ
+     13CA __imp_??0noncopyable@bc@@IAE@XZ
+
+Archive member name at 70E: /               
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+     6D7 size
+correct header end
+
+    30 offsets
+
+        1      E22
+        2     104C
+        3     1182
+        4     194C
+        5     1874
+        6     1B20
+        7     1AA8
+        8     19BA
+        9     18DC
+        A     171A
+        B     1CF0
+        C     1C00
+        D     1C7A
+        E     1B96
+        F     178A
+       10     1DD4
+       11     1D5E
+       12     1A30
+       13     1E48
+       14     1EBA
+       15     17FA
+       16     1626
+       17     15B0
+       18     152E
+       19     134C
+       1A     1440
+       1B     12D4
+       1C     169A
+       1D     14B8
+       1E     13CA
+
+    55 public symbols
+
+       1B ??0init_checker@bc@@IAE@XZ
+       19 ??0init_checker@bc@@QAE@ABV01@@Z
+       1E ??0noncopyable@bc@@IAE@XZ
+       1A ??1init_checker@bc@@MAE@XZ
+       1D ??1noncopyable@bc@@MAE@XZ
+       18 ??4init_checker@bc@@QAEAAV01@ABV01@@Z
+       1C ?initCheck@init_checker@bc@@QBEJXZ
+        A _BCA_CloseChannel@8
+        F _BCA_CloseDevice@4
+       15 _BCA_GetPairingDeviceInfo@20
+        5 _BCA_Init@4
+        9 _BCA_OpenChannel@40
+        4 _BCA_OpenDevice@4
+        8 _BCA_RegisterEventFunc@12
+       12 _BCA_RegisterPairingFunc@12
+        7 _BCA_RegisterReceiveFunc@12
+        6 _BCA_RegisterSendFunc@12
+        E _BCA_Reset@4
+        C _BCA_SendAcknowledgedData@16
+        D _BCA_SendBurstTransfer@16
+        B _BCA_SendData@16
+       11 _BCA_SetChannelTxPower@12
+       10 _BCA_SetTransmitPower@8
+       13 _BCA_StartPairing@20
+       14 _BCA_StopPairing@4
+        1 __IMPORT_DESCRIPTOR_BCA_Lib
+        2 __NULL_IMPORT_DESCRIPTOR
+       1B __imp_??0init_checker@bc@@IAE@XZ
+       19 __imp_??0init_checker@bc@@QAE@ABV01@@Z
+       1E __imp_??0noncopyable@bc@@IAE@XZ
+       1A __imp_??1init_checker@bc@@MAE@XZ
+       1D __imp_??1noncopyable@bc@@MAE@XZ
+       18 __imp_??4init_checker@bc@@QAEAAV01@ABV01@@Z
+       17 __imp_??_7init_checker@bc@@6B@
+       16 __imp_??_7noncopyable@bc@@6B@
+       1C __imp_?initCheck@init_checker@bc@@QBEJXZ
+        A __imp__BCA_CloseChannel@8
+        F __imp__BCA_CloseDevice@4
+       15 __imp__BCA_GetPairingDeviceInfo@20
+        5 __imp__BCA_Init@4
+        9 __imp__BCA_OpenChannel@40
+        4 __imp__BCA_OpenDevice@4
+        8 __imp__BCA_RegisterEventFunc@12
+       12 __imp__BCA_RegisterPairingFunc@12
+        7 __imp__BCA_RegisterReceiveFunc@12
+        6 __imp__BCA_RegisterSendFunc@12
+        E __imp__BCA_Reset@4
+        C __imp__BCA_SendAcknowledgedData@16
+        D __imp__BCA_SendBurstTransfer@16
+        B __imp__BCA_SendData@16
+       11 __imp__BCA_SetChannelTxPower@12
+       10 __imp__BCA_SetTransmitPower@8
+       13 __imp__BCA_StartPairing@20
+       14 __imp__BCA_StopPairing@4
+        3 BCA_Lib_NULL_THUNK_DATA
+
+Archive member name at E22: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+     1ED size
+correct header end
+
+FILE HEADER VALUES
+             14C machine (x86)
+               3 number of sections
+        512F4638 time date stamp Thu Feb 28 20:57:44 2013
+             10B file pointer to symbol table
+               8 number of symbols
+               0 size of optional header
+             100 characteristics
+                   32 bit word machine
+
+SECTION HEADER #1
+.debug$S name
+       0 physical address
+       0 virtual address
+      41 size of raw data
+      8C file pointer to raw data (0000008C to 000000CC)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+RAW DATA #1
+  00000000: 02 00 00 00 12 00 09 00 00 00 00 00 0B 42 43 41  .............BCA
+  00000010: 5F 4C 69 62 2E 64 6C 6C 27 00 13 10 07 00 00 00  _Lib.dll'.......
+  00000020: 03 00 00 00 00 00 00 00 09 00 00 00 09 78 12 4D  .............x.M
+  00000030: 69 63 72 6F 73 6F 66 74 20 28 52 29 20 4C 49 4E  icrosoft (R) LIN
+  00000040: 4B                                               K
+
+SECTION HEADER #2
+.idata$2 name
+       0 physical address
+       0 virtual address
+      14 size of raw data
+      CD file pointer to raw data (000000CD to 000000E0)
+      E1 file pointer to relocation table
+       0 file pointer to line numbers
+       3 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+RAW DATA #2
+  00000000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+  00000010: 00 00 00 00                                      ....
+
+RELOCATIONS #2
+                                                Symbol    Symbol
+ Offset    Type              Applied To         Index     Name
+ --------  ----------------  -----------------  --------  ------
+ 0000000C  DIR32NB                    00000000         3  .idata$6
+ 00000000  DIR32NB                    00000000         4  .idata$4
+ 00000010  DIR32NB                    00000000         5  .idata$5
+
+SECTION HEADER #3
+.idata$6 name
+       0 physical address
+       0 virtual address
+       C size of raw data
+      FF file pointer to raw data (000000FF to 0000010A)
+      E1 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0200040 flags
+         Initialized Data
+         2 byte align
+         Read Write
+
+RAW DATA #3
+  00000000: 42 43 41 5F 4C 69 62 2E 64 6C 6C 00              BCA_Lib.dll.
+
+COFF SYMBOL TABLE
+000 00937809 ABS    notype       Static       | @comp.id
+001 00000000 SECT2  notype       External     | __IMPORT_DESCRIPTOR_BCA_Lib
+002 C0000040 SECT2  notype       Section      | .idata$2
+003 00000000 SECT3  notype       Static       | .idata$6
+004 C0000040 UNDEF  notype       Section      | .idata$4
+005 C0000040 UNDEF  notype       Section      | .idata$5
+006 00000000 UNDEF  notype       External     | __NULL_IMPORT_DESCRIPTOR
+007 00000000 UNDEF  notype       External     | BCA_Lib_NULL_THUNK_DATA
+
+String Table Size = 0x52 bytes
+
+Archive member name at 104C: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      FA size
+correct header end
+
+FILE HEADER VALUES
+             14C machine (x86)
+               2 number of sections
+        512F4638 time date stamp Thu Feb 28 20:57:44 2013
+              B9 file pointer to symbol table
+               2 number of symbols
+               0 size of optional header
+             100 characteristics
+                   32 bit word machine
+
+SECTION HEADER #1
+.debug$S name
+       0 physical address
+       0 virtual address
+      41 size of raw data
+      64 file pointer to raw data (00000064 to 000000A4)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+RAW DATA #1
+  00000000: 02 00 00 00 12 00 09 00 00 00 00 00 0B 42 43 41  .............BCA
+  00000010: 5F 4C 69 62 2E 64 6C 6C 27 00 13 10 07 00 00 00  _Lib.dll'.......
+  00000020: 03 00 00 00 00 00 00 00 09 00 00 00 09 78 12 4D  .............x.M
+  00000030: 69 63 72 6F 73 6F 66 74 20 28 52 29 20 4C 49 4E  icrosoft (R) LIN
+  00000040: 4B                                               K
+
+SECTION HEADER #2
+.idata$3 name
+       0 physical address
+       0 virtual address
+      14 size of raw data
+      A5 file pointer to raw data (000000A5 to 000000B8)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+RAW DATA #2
+  00000000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+  00000010: 00 00 00 00                                      ....
+
+COFF SYMBOL TABLE
+000 00937809 ABS    notype       Static       | @comp.id
+001 00000000 SECT2  notype       External     | __NULL_IMPORT_DESCRIPTOR
+
+String Table Size = 0x1D bytes
+
+Archive member name at 1182: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+     116 size
+correct header end
+
+FILE HEADER VALUES
+             14C machine (x86)
+               3 number of sections
+        512F4638 time date stamp Thu Feb 28 20:57:44 2013
+              D5 file pointer to symbol table
+               2 number of symbols
+               0 size of optional header
+             100 characteristics
+                   32 bit word machine
+
+SECTION HEADER #1
+.debug$S name
+       0 physical address
+       0 virtual address
+      41 size of raw data
+      8C file pointer to raw data (0000008C to 000000CC)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42100040 flags
+         Initialized Data
+         Discardable
+         1 byte align
+         Read Only
+
+RAW DATA #1
+  00000000: 02 00 00 00 12 00 09 00 00 00 00 00 0B 42 43 41  .............BCA
+  00000010: 5F 4C 69 62 2E 64 6C 6C 27 00 13 10 07 00 00 00  _Lib.dll'.......
+  00000020: 03 00 00 00 00 00 00 00 09 00 00 00 09 78 12 4D  .............x.M
+  00000030: 69 63 72 6F 73 6F 66 74 20 28 52 29 20 4C 49 4E  icrosoft (R) LIN
+  00000040: 4B                                               K
+
+SECTION HEADER #2
+.idata$5 name
+       0 physical address
+       0 virtual address
+       4 size of raw data
+      CD file pointer to raw data (000000CD to 000000D0)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+RAW DATA #2
+  00000000: 00 00 00 00                                      ....
+
+SECTION HEADER #3
+.idata$4 name
+       0 physical address
+       0 virtual address
+       4 size of raw data
+      D1 file pointer to raw data (000000D1 to 000000D4)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0300040 flags
+         Initialized Data
+         4 byte align
+         Read Write
+
+RAW DATA #3
+  00000000: 00 00 00 00                                      ....
+
+COFF SYMBOL TABLE
+000 00937809 ABS    notype       Static       | @comp.id
+001 00000000 SECT2  notype       External     | BCA_Lib_NULL_THUNK_DATA
+
+String Table Size = 0x1D bytes
+
+Archive member name at 12D4: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000027
+  DLL name     : BCA_Lib.dll
+  Symbol name  : ??0init_checker@bc@@IAE@XZ (protected: __thiscall bc::init_checker::init_checker(void))
+  Type         : code
+  Name type    : name
+  Hint         : 0
+  Name         : ??0init_checker@bc@@IAE@XZ
+
+Archive member name at 134C: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      41 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 0000002D
+  DLL name     : BCA_Lib.dll
+  Symbol name  : ??0init_checker@bc@@QAE@ABV01@@Z (public: __thiscall bc::init_checker::init_checker(class bc::init_checker const &))
+  Type         : code
+  Name type    : name
+  Hint         : 1
+  Name         : ??0init_checker@bc@@QAE@ABV01@@Z
+
+Archive member name at 13CA: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000026
+  DLL name     : BCA_Lib.dll
+  Symbol name  : ??0noncopyable@bc@@IAE@XZ (protected: __thiscall bc::noncopyable::noncopyable(void))
+  Type         : code
+  Name type    : name
+  Hint         : 2
+  Name         : ??0noncopyable@bc@@IAE@XZ
+
+Archive member name at 1440: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3B size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000027
+  DLL name     : BCA_Lib.dll
+  Symbol name  : ??1init_checker@bc@@MAE@XZ (protected: virtual __thiscall bc::init_checker::~init_checker(void))
+  Type         : code
+  Name type    : name
+  Hint         : 3
+  Name         : ??1init_checker@bc@@MAE@XZ
+
+Archive member name at 14B8: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000026
+  DLL name     : BCA_Lib.dll
+  Symbol name  : ??1noncopyable@bc@@MAE@XZ (protected: virtual __thiscall bc::noncopyable::~noncopyable(void))
+  Type         : code
+  Name type    : name
+  Hint         : 4
+  Name         : ??1noncopyable@bc@@MAE@XZ
+
+Archive member name at 152E: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      46 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000032
+  DLL name     : BCA_Lib.dll
+  Symbol name  : ??4init_checker@bc@@QAEAAV01@ABV01@@Z (public: class bc::init_checker & __thiscall bc::init_checker::operator=(class bc::init_checker const &))
+  Type         : code
+  Name type    : name
+  Hint         : 5
+  Name         : ??4init_checker@bc@@QAEAAV01@ABV01@@Z
+
+Archive member name at 15B0: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      39 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000025
+  DLL name     : BCA_Lib.dll
+  Symbol name  : ??_7init_checker@bc@@6B@ (const bc::init_checker::`vftable')
+  Type         : data
+  Name type    : name
+  Hint         : 6
+  Name         : ??_7init_checker@bc@@6B@
+
+Archive member name at 1626: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      38 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000024
+  DLL name     : BCA_Lib.dll
+  Symbol name  : ??_7noncopyable@bc@@6B@ (const bc::noncopyable::`vftable')
+  Type         : data
+  Name type    : name
+  Hint         : 7
+  Name         : ??_7noncopyable@bc@@6B@
+
+Archive member name at 169A: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      43 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 0000002F
+  DLL name     : BCA_Lib.dll
+  Symbol name  : ?initCheck@init_checker@bc@@QBEJXZ (public: long __thiscall bc::init_checker::initCheck(void)const )
+  Type         : code
+  Name type    : name
+  Hint         : 8
+  Name         : ?initCheck@init_checker@bc@@QBEJXZ
+
+Archive member name at 171A: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      34 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000020
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_CloseChannel@8
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 7
+
+Archive member name at 178A: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      33 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 0000001F
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_CloseDevice@4
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 12
+
+Archive member name at 17FA: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000029
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_GetPairingDeviceInfo@20
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 18
+
+Archive member name at 1874: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      2C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000018
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_Init@4
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 2
+
+Archive member name at 18DC: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      34 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000020
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_OpenChannel@40
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 6
+
+Archive member name at 194C: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      32 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 0000001E
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_OpenDevice@4
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 1
+
+Archive member name at 19BA: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000026
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_RegisterEventFunc@12
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 5
+
+Archive member name at 1A30: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000028
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_RegisterPairingFunc@12
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 15
+
+Archive member name at 1AA8: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3C size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000028
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_RegisterReceiveFunc@12
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 4
+
+Archive member name at 1B20: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      39 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000025
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_RegisterSendFunc@12
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 3
+
+Archive member name at 1B96: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      2D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000019
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_Reset@4
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 11
+
+Archive member name at 1C00: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3D size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000029
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_SendAcknowledgedData@16
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 9
+
+Archive member name at 1C7A: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000026
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_SendBurstTransfer@16
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 10
+
+Archive member name at 1CF0: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      31 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 0000001D
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_SendData@16
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 8
+
+Archive member name at 1D5E: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      3A size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000026
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_SetChannelTxPower@12
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 14
+
+Archive member name at 1DD4: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      38 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000024
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_SetTransmitPower@8
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 13
+
+Archive member name at 1E48: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      35 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 00000021
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_StartPairing@20
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 16
+
+Archive member name at 1EBA: BCA_Lib.dll/    
+512F4638 time/date Thu Feb 28 20:57:44 2013
+         uid
+         gid
+       0 mode
+      33 size
+correct header end
+
+  Version      : 0
+  Machine      : 14C (x86)
+  TimeDateStamp: 512F4638 Thu Feb 28 20:57:44 2013
+  SizeOfData   : 0000001F
+  DLL name     : BCA_Lib.dll
+  Symbol name  : _BCA_StopPairing@4
+  Type         : code
+  Name type    : ordinal
+  Ordinal      : 17
+
+     Exports
+
+       ordinal    name
+
+                  ??0init_checker@bc@@IAE@XZ (protected: __thiscall bc::init_checker::init_checker(void))
+                  ??0init_checker@bc@@QAE@ABV01@@Z (public: __thiscall bc::init_checker::init_checker(class bc::init_checker const &))
+                  ??0noncopyable@bc@@IAE@XZ (protected: __thiscall bc::noncopyable::noncopyable(void))
+                  ??1init_checker@bc@@MAE@XZ (protected: virtual __thiscall bc::init_checker::~init_checker(void))
+                  ??1noncopyable@bc@@MAE@XZ (protected: virtual __thiscall bc::noncopyable::~noncopyable(void))
+                  ??4init_checker@bc@@QAEAAV01@ABV01@@Z (public: class bc::init_checker & __thiscall bc::init_checker::operator=(class bc::init_checker const &))
+                  ??_7init_checker@bc@@6B@ (const bc::init_checker::`vftable')
+                  ??_7noncopyable@bc@@6B@ (const bc::noncopyable::`vftable')
+                  ?initCheck@init_checker@bc@@QBEJXZ (public: long __thiscall bc::init_checker::initCheck(void)const )
+             7    _BCA_CloseChannel@8
+            12    _BCA_CloseDevice@4
+            18    _BCA_GetPairingDeviceInfo@20
+             2    _BCA_Init@4
+             6    _BCA_OpenChannel@40
+             1    _BCA_OpenDevice@4
+             5    _BCA_RegisterEventFunc@12
+            15    _BCA_RegisterPairingFunc@12
+             4    _BCA_RegisterReceiveFunc@12
+             3    _BCA_RegisterSendFunc@12
+            11    _BCA_Reset@4
+             9    _BCA_SendAcknowledgedData@16
+            10    _BCA_SendBurstTransfer@16
+             8    _BCA_SendData@16
+            14    _BCA_SetChannelTxPower@12
+            13    _BCA_SetTransmitPower@8
+            16    _BCA_StartPairing@20
+            17    _BCA_StopPairing@4
+
+  Summary
+
+          C3 .debug$S
+          14 .idata$2
+          14 .idata$3
+           4 .idata$4
+           4 .idata$5
+           C .idata$6
