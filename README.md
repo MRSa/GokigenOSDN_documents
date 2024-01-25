@@ -1,5 +1,7 @@
 # [GOKIGENプロジェクト / OSDN GOKIGEN Project](https://osdn.net/projects/gokigen/wiki/FrontPage)
+
 ゴキゲン！なモバイルアプリケーションを書きたいなあ、とプロジェクトを立ち上げました。
+
 * https://osdn.net/projects/gokigen/wiki/FrontPage 
 
 
@@ -135,9 +137,13 @@ WearOS用の非常にシンプルな月間カレンダーです。タイルで�
 
 ------------------------------
 
+## [miscellaneous](miscellaneous/README.md)
+雑多なドキュメント類を格納する場所です。
+
+------------------------------
+
 ## [その他](https://osdn.net/projects/gokigen/wiki/Pjmap)
 （作成中）
-
 
 ----------------------------------------------------------------
 
