@@ -137,7 +137,7 @@ WearOS用の非常にシンプルな月間カレンダーです。タイルで�
 
 ------------------------------
 
-## [miscellaneous](miscellaneous/README.md)
+## [miscellaneous](https://github.com/MRSa/GokigenOSDN_documents/tree/main/miscellaneous)
 雑多なドキュメント類を格納する場所です。
 
 ------------------------------
