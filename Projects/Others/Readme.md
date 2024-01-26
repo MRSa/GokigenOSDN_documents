@@ -17,6 +17,8 @@
 
 -----
 
-## EEG
+## EEG(Electroencephalography)について
 
-(そのうち書く、、、かも？)
+* [EEGについて(pptx)](aboutEEG.pptx)
+
+-----
