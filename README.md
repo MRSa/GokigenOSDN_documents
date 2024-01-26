@@ -21,8 +21,6 @@
 
 なお、提案した金額が気に入らない場合には、支払金額の値を変更することで、他の種類の人が支払うべき金額を再計算させていただきます。
 
-よろしければお試しください。
-
 ------------------------------
 
 ## [ごきげんダイアリー ： GokigenDiary](Applications/GokigenDiary/Readme.md)
@@ -32,12 +30,10 @@
 
 ------------------------------
 
-## [めもま ： MeMoMa](https://osdn.net/projects/gokigen/wiki/MeMoMa)
+## [ごきげんめもま ： MeMoMa](Applications/MemMoMa/README.md)
 
-「[めもま](https://osdn.net/projects/gokigen/wiki/MeMoMa)」は、アイデアをまとめるためのAndroidタブレット用アプリです。Android 3.1以降で動作します。
+「[ごきげんめもま](Applications/MemMoMa/README.md)」は、アイデアをまとめるためのAndroid用アプリです。Android 4.0以降で動作します。
 ホワイトボードに付箋紙を貼りつけ、その後グルーピングや関係性の整理を行うという作業をAndroidタブレット端末上で実現できないか、と考え、制作しました。
-
-よろしければお試しください。
 
 ------------------------------
 
