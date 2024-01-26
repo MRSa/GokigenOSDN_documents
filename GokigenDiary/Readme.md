@@ -22,14 +22,14 @@
 ### 起動
 
 普通のAndroidアプリです。ランチャーからアイコンをタップして起動させてください。
-![ごきげんダイアリーの起動](../images/attachments/GokigenDiary_StartApplication.png, "ごきげんダイアリーの起動")
+![ごきげんダイアリーの起動](GokigenDiary_StartApplication.png, "ごきげんダイアリーの起動")
 
 ### 画面遷移
 
 ごきげんダイアリーは、基本的に画面上に表示しているデータ、ボタンで表示している画面を切り替えます。
 （「Menu」ボタンを押して出てくるメニューからも画面を切り替える場合もあります。）
 
-![ごきげんダイアリーの全体像](../images/attachments/GokigenDiary_Overview.PNG, "ごきげんダイアリーの全体像")
+![ごきげんダイアリーの全体像](GokigenDiary_Overview.PNG, "ごきげんダイアリーの全体像")
 
 ### 各画面の概要
 
@@ -38,7 +38,7 @@
 ごきげんダイアリーを起動後表示する画面で、入力済みデータの一覧を日別に表示します。
 データを選択すると参照画面、右下のえんぴつボタンを押すと入力画面、左下の虫めがねボタンを押すと検索画面を表示します。
 
-![メイン画面](../images/attachments/GokigenDiary_GokigenDiaryMain1.png, "メイン画面")
+![メイン画面](GokigenDiary_GokigenDiaryMain1.png, "メイン画面")
 
 操作の詳細は、[メイン画面の操作](MainScreenOfGokigenDiary.md)を参照してください。
 
@@ -46,7 +46,7 @@
 
 データを入力する画面です。データを入力し終わった後、右下の共有ボタン、ディスクアイコンを押すと、記入内容を保存します。
 
-![入力画面](../images/attachments/GokigenDiary_dataInputScreen.png, "入力画面")
+![入力画面](GokigenDiary_dataInputScreen.png, "入力画面")
 
 操作の詳細は、[入力画面の操作](DataInputScreenOfGokigenDiary.md)を参照してください。
 
@@ -54,7 +54,7 @@
 
 入力済みデータを表示する画面です。
 
-![参照画面](../images/attachments/GokigenDiary_DataView1.png, "参照画面")
+![参照画面](GokigenDiary_DataView1.png, "参照画面")
 
 操作の詳細は、[参照画面の操作](DataViewScreenOfGokigenDiary.md)を参照してください。
 
@@ -63,7 +63,7 @@
 現在位置、あるいは入力済みデータの位置を地図で表示する画面です。
 ただし、**設定画面で、オフラインモードになっている場合には、本画面は利用することができません。**
 
-![マップ画面](../images/attachments/GokigenDiary_MapView1.png, "マップ画面")
+![マップ画面](GokigenDiary_MapView1.png, "マップ画面")
 
 操作の詳細は、[マップ画面の操作](MapScreenOfGokigenDiary.md)を参照してください。
 
@@ -71,7 +71,7 @@
 
 入力済みデータを集計し、グラフ化して表示する画面です。
 
-![グラフ画面](../images/attachments/GokigenDiary_GraphView1.png, "グラフ画面")
+![グラフ画面](GokigenDiary_GraphView1.png, "グラフ画面")
 
 操作の詳細は、[グラフ画面の操作](GraphScreenOfGokigenDiary.md)を参照してください。
 
@@ -79,7 +79,7 @@
 
 過去に入力したデータの検索を1ヶ月単位で検索し一覧表示を行う画面です。
 
-![検索画面](../images/attachments/GokigenDiary_gokigenSearch.png, "検索画面")
+![検索画面](GokigenDiary_gokigenSearch.png, "検索画面")
 
 操作の詳細は、[検索画面の操作](SearchScreenOfGokigenDiary.md)を参照してください。
 
@@ -87,7 +87,7 @@
 
 ごきげんダイアリーの設定を変更する画面です。
 
-![設定画面](../images/attachments/GokigenDiary_Preference1.png, "設定画面")
+![設定画面](GokigenDiary_Preference1.png, "設定画面")
 
 操作の詳細は、[設定画面の操作](PreferencesScreenOfGokigenDiary.md)を参照してください。
 
