@@ -28,3 +28,11 @@
 * [Fujifilm X Camera Commands](FujiXCommands.md)
 
 -----
+
+## THETA プラグインの作成・公開 備忘録
+
+ThetaThoughtShutter というRICOH製 THETAプラグインを [https://pluginstore.theta360.com/plugins/jp.osdn.gokigen.thetathoughtshutter/ RICOH THETA Plug-in Store] で2021年3月に公開しました。このプラグイン公開までの流れの備忘録としてまとめました。
+
+* [THETA プラグインの作成・公開 備忘録](ThetaPlugin.md)
+
+-----

@@ -30,9 +30,9 @@
 
 ------------------------------
 
-## [ごきげんめもま ： MeMoMa](Applications/MemMoMa/README.md)
+## [ごきげんめもま ： MeMoMa](Applications/MeMoMa/README.md)
 
-「[ごきげんめもま](Applications/MemMoMa/README.md)」は、アイデアをまとめるためのAndroid用アプリです。Android 4.0以降で動作します。
+「[ごきげんめもま](Applications/MeMoMa/README.md)」は、アイデアをまとめるためのAndroid用アプリです。Android 4.0以降で動作します。
 ホワイトボードに付箋紙を貼りつけ、その後グルーピングや関係性の整理を行うという作業をAndroidタブレット端末上で実現できないか、と考え、制作しました。
 
 ------------------------------
