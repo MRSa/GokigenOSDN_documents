@@ -107,15 +107,15 @@ Canon社製[iNSPiC REC](https://faq.canon.jp/app/answers/detail/a_id/101027)の�
 
 ------------------------------
 
-## [Theta "Thought" Shutter : 脳波で撮影を行うTHETAプラグイン](https://osdn.net/projects/gokigen/wiki/ThetaThoughtShutter)
+## [Theta "Thought" Shutter : 脳波で撮影を行うTHETAプラグイン](Projects/Others/ThetaThoughtShutter.md)
 
-[NeuroSky](https://www.neurosky.jp/)社の簡易脳波計である[MindWave Mobile 2 EEGヘッドセット](https://store.neurosky.com/pages/mindwave) を使用してシャッターを切る、[RICOH製 THETA V/Z1](https://theta360.com/ja/)用のプラグインです。
+[NeuroSky](https://www.neurosky.jp/)社の簡易脳波計である[MindWave Mobile 2 EEGヘッドセット](https://store.neurosky.com/pages/mindwave) を使用してシャッターを切る、[RICOH製 THETA V/Z1](https://www.ricoh360.com/ja/theta/)用のプラグインです。
 
 ------------------------------
 
 ## [ThetaThoughtShutterS Theta "Thought" ShutterS : 脳波で撮影を行うAndroidアプリケーション](https://osdn.net/projects/gokigen/wiki/ThetaThoughtShutterS)
 
-[NeuroSky](https://www.neurosky.jp/)社の簡易脳波計である[MindWave Mobile 2 EEGヘッドセット](https://store.neurosky.com/pages/mindwave)を使用してWifi経由で[RICOH製 THETA](https://theta360.com/ja/)のシャッターを切る、Androidアプリケーションです。
+[NeuroSky](https://www.neurosky.jp/)社の簡易脳波計である[MindWave Mobile 2 EEGヘッドセット](https://store.neurosky.com/pages/mindwave)を使用してWifi経由で[RICOH製 THETA](hhttps://www.ricoh360.com/ja/theta/)のシャッターを切る、Androidアプリケーションです。
 
 ------------------------------
 
