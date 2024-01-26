@@ -12,9 +12,9 @@
 
 ------------------------------
 
-## [わりかん ： TheWarikan](TheWarikan/Readme.md)
+## [わりかん ： TheWarikan](Applications/TheWarikan/Readme.md)
 
-「[わりかん](TheWarikan/Readme.md)」は、ワリカン計算を行うためのAndroid端末用アプリです。
+「[わりかん](Applications/TheWarikan/Readme.md)」は、ワリカン計算を行うためのAndroid端末用アプリです。
 
 支払総額と、スポンサー（偉い人）、男性、女性と3種類の人数を入れると、それぞれの人たちが支払う金額をご提案させていただきます。
 ただ、普通の計算アプリとはちょっとだけ異なり、スポンサーは大目に（大盤振る舞い！）支払う、とか、女性はちょっと少なめでキリの良い金額になる、といった**ドンブリ計算**を行っています。（スポンサー、男性、女性、それぞれの種類の人たちだけでワリカン計算を行う場合も、ちょっと違った割り方を行っています。）
@@ -25,9 +25,9 @@
 
 ------------------------------
 
-## [ごきげんダイアリー ： GokigenDiary](GokigenDiary/Readme.md)
+## [ごきげんダイアリー ： GokigenDiary](Applications/GokigenDiary/Readme.md)
 
-「[ごきげんダイアリー](GokigenDiary/Readme.md)」は、その日、その時、その場所の気持ちを残しておきたい、という人向けのAndroid端末用アプリです。
+「[ごきげんダイアリー](Applications/GokigenDiary/Readme.md)」は、その日、その時、その場所の気持ちを残しておきたい、という人向けのAndroid端末用アプリです。
 ごきげん度数、メモ入力、数値入力、カメラ画像、現在位置(GPSデータ)をメモリカードに記録することができます。
 
 ------------------------------
@@ -41,9 +41,9 @@
 
 ------------------------------
 
-## [紙相撲マシン ： PaperSumoBattleField](PaperSumoBattleField/Readme.md)
+## [紙相撲マシン ： PaperSumoBattleField](Projects/PaperSumoBattleField/Readme.md)
 
-「[紙相撲マシン](PaperSumoBattleField/Readme.md)」は、「紙相撲」を [Android Open Accessory Development Kit, ADK](http://developer.android.com/guide/topics/usb/adk.html)) を使って、ちょっぴり盛り上げるしかけを作ってみたものです。
+「[紙相撲マシン](Projects/PaperSumoBattleField/Readme.md)」は、「紙相撲」を [Android Open Accessory Development Kit, ADK](http://developer.android.com/guide/topics/usb/adk.html)) を使って、ちょっぴり盛り上げるしかけを作ってみたものです。
 このマシンは、[Google Developer Day 2011 Japan](http://www.google.com/events/developerday/2011/tokyo/)の Open Call - Android ADK コーナーで展示をさせて頂きました。([参考：Google Japan Developer Relations Blogの記事](http://googledevjp.blogspot.com/2011/10/google-developer-day-2011-japan-open.html))
 
 観覧してくださった皆様、また、こういった展示の機会を与えてくださった googleの方に御礼申し上げます。本当に本当にありがとうございました。
@@ -60,7 +60,7 @@
 
 ------------------------------
 
-## [桃太郎からの挑戦状](Okaken/Readme.md)
+## [桃太郎からの挑戦状](Projects/Okaken/Readme.md)
 
 岡山に関係する４択問題を出題するクイズゲームです。
 
