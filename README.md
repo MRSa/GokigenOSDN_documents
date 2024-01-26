@@ -95,7 +95,7 @@ A01dより派生した、RICOH製デジタルカメラ GR II / GR III / PENTAX�
 
 ------------------------------
 
-## [FV-100Checker : iNSPiC RECの状態を確認するツール](https://osdn.net/projects/gokigen/wiki/BLEControl)
+## [FV-100Checker : iNSPiC RECの状態を確認するツール](Projects/Others/BLEControl.md)
 
 Canon社製[iNSPiC REC](https://faq.canon.jp/app/answers/detail/a_id/101027)の状態を確認するためのAndroidアプリケーションです。
 
