@@ -10,16 +10,16 @@
 
 ![スクリーンショット](TheWarikan.png "スクリーンショット")
 
-
 ## インストール
+
 [Google Play Console](https://play.google.com/store/apps/details?id=jp.sourceforge.gokigen.warikan) よりインストール可能です。
 * https://play.google.com/store/apps/details?id=jp.sourceforge.gokigen.warikan
 
 ## ソースコード
-[OSDN Gitリポジトリ](https://scm.osdn.net/gitroot/gokigen/TheWarikan.git)から参照可能です。
 
-以上
+[GitHubリポジトリ](https://github.com/MRSa/TheWarikan) ~~[OSDN Gitリポジトリ](https://scm.osdn.net/gitroot/gokigen/TheWarikan.git)~~ から参照可能です。
+
 
 --------------------------------
 
-* The primary web page is the 'https://osdn.net/projects/gokigen/wiki/TheWarikan'.
+* The original web page is the 'https://osdn.net/projects/gokigen/wiki/TheWarikan'.
