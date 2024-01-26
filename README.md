@@ -52,7 +52,7 @@
 
 ------------------------------
 
-## [prprウオッチフェース](https://osdn.net/projects/gokigen/wiki/prpr)
+## [prprウオッチフェース](Projects/Others/prpr.md)
 
 AndroidのWearOSで、「スライドショー」を行う非常にシンプルなアプリケーションです。
 
