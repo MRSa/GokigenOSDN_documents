@@ -46,7 +46,7 @@
 
 ------------------------------
 
-## [チョロQを複数台自動制御！ ： QsteerControl QSteerControl](https://osdn.net/projects/gokigen/wiki/QsteerControl)
+## [チョロQを複数台自動制御！ ： QsteerControl](Projects/QsteerControl/Readme.md)
 
 チョロQをADK経由で複数台を自動制御して遊ぼうとしています。
 
