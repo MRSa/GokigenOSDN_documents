@@ -1,7 +1,7 @@
 # Theta "Thought" Shutter : 脳波で撮影を行うTHETAプラグイン
-
+<!--
 **Google Translate** for this page : https://translate.google.com/translate?sl=ja&tl=en&u=https://github.com/MRSa/GokigenOSDN_documents/blob/main/Projects/Others/ThetaThoughtShutter.md
-
+-->
 -----
 
 ## 概要
