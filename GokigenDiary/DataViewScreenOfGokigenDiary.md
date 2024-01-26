@@ -7,7 +7,6 @@
 参照画面は、ごきげんダイアリーで入力したデータを表示する画面です。記録した位置、時間、内容を表示します。
 
 ![参照画面](DataViewScreenOfGokigenDiary_DataView1.png "参照画面")
-
 ![参照画面](DataViewScreenOfGokigenDiary_ViewForm01.png "参照画面")
 
 

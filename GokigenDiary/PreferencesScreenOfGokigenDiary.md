@@ -1,12 +1,12 @@
 # 設定画面の操作
 
-**本ページは、[OSDNのページ、PreferenceScreenOfGokigenDiary](https://osdn.net/projects/gokigen/wiki/PreferenceScreenOfGokigenDiary) のコピーです。投稿当時の情報を移植、掲載しています。**
+**本ページは、[OSDNのページ、PreferencesScreenOfGokigenDiary](https://osdn.net/projects/gokigen/wiki/PreferencesScreenOfGokigenDiary) のコピーです。投稿当時の情報を移植、掲載しています。**
 
 ------
 
 ごきげんダイアリーの設定項目です。
 
-![設定項目](PreferenceScreenOfGokigenDiary_Preference.png "設定項目")
+![設定項目](PreferencesScreenOfGokigenDiary_Preference.png "設定項目")
 
 ## 一般設定(en: preference)グループ
 
@@ -26,7 +26,7 @@
 
 この項目にチェックを入れると、ごきげんダイアリーが起動された時にパスワードの入力を求めるようになります。
 
-![起動パスワードの入力](PreferenceScreenOfGokigenDiary_passwordInput.png "起動パスワードの入力")
+![起動パスワードの入力](PreferencesScreenOfGokigenDiary_passwordInput.png "起動パスワードの入力")
 
 ### 起動パスワード(en: Password)
 
@@ -57,7 +57,7 @@
 追加しないか、標準(英語圏で使われている、;-) といった顔文字)のものを使うか、日本式( （・∀・）といった顔文字)を使うかを選択します。
 デフォルトの設定は、「追加しない」です。
 
-![顔文字の挿入](PreferenceScreenOfGokigenDiary_Preference2.png "顔文字の挿入")
+![顔文字の挿入](PreferencesScreenOfGokigenDiary_Preference2.png "顔文字の挿入")
 
 * 追加しない(en: nothing)
  顔文字を追加しません。
@@ -70,14 +70,14 @@
 
 なお、顔文字との対応は、次のようになっています。
 
-![顔文字の対応](PreferenceScreenOfGokigenDiary_Emotions.png "顔文字の対応")
+![顔文字の対応](PreferencesScreenOfGokigenDiary_Emotions.png "顔文字の対応")
 
 ### 位置情報の挿入(Insert Location Info.)
 
 共有コマンドを実行したとき、メモの末尾に現在位置の情報を追加するかどうかを指定します。
 デフォルトの設定は、「追加しない」です。
 
-![位置情報の挿入](PreferenceScreenOfGokigenDiary_Preference4.png "位置情報の挿入")
+![位置情報の挿入](PreferencesScreenOfGokigenDiary_Preference4.png "位置情報の挿入")
 
 * 追加しない(en: nothing)
   位置情報の追加を行いません。
