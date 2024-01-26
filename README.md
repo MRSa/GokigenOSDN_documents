@@ -56,18 +56,6 @@
 
 ------------------------------
 
-## [BC-ANTで遊ぼう！ : BC-ANT BC-ANT](https://osdn.net/projects/gokigen/wiki/BC-ANT)
-
-------------------------------
-
-## [桃太郎からの挑戦状](Projects/Okaken/Readme.md)
-
-岡山に関係する４択問題を出題するクイズゲームです。
-
-* https://osdn.net/projects/gokigen/wiki/Okaken
-
-------------------------------
-
 ## [prprウオッチフェース](https://osdn.net/projects/gokigen/wiki/prpr)
 
 AndroidのWearOSで、「スライドショー」を行う非常にシンプルなアプリケーションです。
@@ -159,15 +147,15 @@ WearOS用の非常にシンプルな月間カレンダーです。タイルで�
 
 ------------------------------
 
-## [miscellaneous](https://github.com/MRSa/GokigenOSDN_documents/tree/main/miscellaneous)
+## [雑多なドキュメント](miscellaneous/README.md)
 
-雑多なドキュメント類を格納する場所です。
+独立なページにするまでもない、雑多なドキュメント類を格納しています。
 
 ------------------------------
 
-## [その他](https://osdn.net/projects/gokigen/wiki/Pjmap)
+## [その他のプロジェクト](Projects/Others/Readme.md)
 
-（作成中）
+独立なページにするまでもない、プロジェクト的なものを置きます。
 
 ------------------------------
 
