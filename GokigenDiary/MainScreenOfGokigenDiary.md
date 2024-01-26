@@ -51,15 +51,15 @@ Todayボタンを押すと、一覧表示を今日の表示に切り替えます
 
 ### 地図ボタン
 
-![地図ボタン](MainScreenOfGokigenDiary_btn_map_normal.png "地図ボタン")を押すと、[マップ画面](MapScreenOfGokigenDiary)を開き、中心に現在位置を表示します。
+![地図ボタン](MainScreenOfGokigenDiary_btn_map_normal.png "地図ボタン")を押すと、[マップ画面](MapScreenOfGokigenDiary.md)を開き、中心に現在位置を表示します。
 
 ### 検索ボタン
 
-![検索ボタン](MainScreenOfGokigenDiary_btn_search_normal.png "検索ボタン")を押すと、[検索画面](SearchScreenOfGokigenDiary) を開きます。
+![検索ボタン](MainScreenOfGokigenDiary_btn_search_normal.png "検索ボタン")を押すと、[検索画面](SearchScreenOfGokigenDiary.md) を開きます。
 
 ### 書き込みボタン
 
-![書き込みボタン](MainScreenOfGokigenDiary_btn_write_normal.png "書き込みボタン")を押すと、[入力画面](DataInputScreenOfGokigenDiary) を開きます。
+![書き込みボタン](MainScreenOfGokigenDiary_btn_write_normal.png "書き込みボタン")を押すと、[入力画面](DataInputScreenOfGokigenDiary.md) を開きます。
 
 ## メニュー操作
 
@@ -69,7 +69,7 @@ Todayボタンを押すと、一覧表示を今日の表示に切り替えます
 
 ### 設定項目
 
-Settingsを押すと、[設定画面](PreferencesScreenOfGokigenDiary) を開きます。
+Settingsを押すと、[設定画面](PreferencesScreenOfGokigenDiary.md) を開きます。
 
 ### Today
 
