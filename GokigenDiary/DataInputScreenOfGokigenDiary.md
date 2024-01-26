@@ -6,7 +6,7 @@
 
 データを入力する画面です。データを入力し終わった後、右下の共有ボタン、ディスクアイコンを押すと、記入内容を保存します。
 
-![入力画面](DataInputScreenOfGokigenDiary_dataInputScreen.png, "入力画面")
+![入力画面](DataInputScreenOfGokigenDiary_dataInputScreen.png "入力画面")
 
 ## 入力データ
 
@@ -34,26 +34,26 @@
 
 共有ボタンを押すと、入力したデータをメモリカードに出力し、共有するアプリケーションを起動します。共有が終了すると、メイン画面に戻ります。
 
-![共有するアプリの選択](DataInputScreenOfGokigenDiary_ShareAction0.png, "共有するアプリの選択")
+![共有するアプリの選択](DataInputScreenOfGokigenDiary_ShareAction0.png "共有するアプリの選択")
 
 ### カメラボタン
 
 カメラボタンを押すと、画像を撮影するためにカメラアプリを起動します。画像の撮影が終了すると、入力画面に戻り、撮影画像を表示します。
 
-![撮影画像](DataInputScreenOfGokigenDiary_input.png, "撮影画像")
+![撮影画像](DataInputScreenOfGokigenDiary_input.png "撮影画像")
 
 ### マイクボタン
 
 マイクボタンを押すと、音声での文字入力を行います。マイクに向かってしゃべってください。
 なお、**マイクボタンは、オフラインモードの時には表示しません。**
 
-![音声での入力](DataInputScreenOfGokigenDiary_INPUTfORM02.png, "音声での入力")
+![音声での入力](DataInputScreenOfGokigenDiary_INPUTfORM02.png "音声での入力")
 
 ## メニュー操作
 
 メニュー操作には、バーコード読み取りと日時指定の機能があります。
 
-![メニュー](DataInputScreenOfGokigenDiary_inputform03.png, "メニュー")
+![メニュー](DataInputScreenOfGokigenDiary_inputform03.png "メニュー")
 
 ### バーコード読み取り
 
@@ -64,12 +64,12 @@
 
 記録する日時を設定できます。記録し忘れた！ というときにデータの入力日時を設定して入力してください。
 
-![日付入力ダイアログ](DataInputScreenOfGokigenDiary_inputform04.png, "日付入力ダイアログ")
+![日付入力ダイアログ](DataInputScreenOfGokigenDiary_inputform04.png "日付入力ダイアログ")
 
 日時を設定した場合は、画面の一番上に表示されている、Rate it! の表示が変わります。
 保存をすると、設定した日付のデータとして保存されます。
 
-![日時設定状態](DataInputScreenOfGokigenDiary_SpecifiedDate.png, "日時設定状態")
+![日時設定状態](DataInputScreenOfGokigenDiary_SpecifiedDate.png "日時設定状態")
 
 ## その他
 
@@ -80,9 +80,9 @@
 ### ごきげんレートと星の数の関係
 
 ごきげんレートの星の数によって、アイコンは次のように表情が変わります。自分の気持ちに近いものを選択し記録してください。
-![ごぎげんレートとアイコンの変化](DataInputScreenOfGokigenDiary_Ratings.png, "ごぎげんレートとアイコンの変化")
+![ごぎげんレートとアイコンの変化](DataInputScreenOfGokigenDiary_Ratings.png "ごぎげんレートとアイコンの変化")
 
-このエモーションアイコンは、Androidのリポジトリ( http://android.git.kernel.org/?p=platform/frameworks/base.git;a=tree;f=core/res/res/drawable-hdpi;h=ebc31ac3e3261edf0067d82730e3ac6a5debcc19;hb=HEAD )にあるものを利用させていただきました。
+このエモーションアイコンは、[Androidのリポジトリ](http://android.git.kernel.org/?p=platform/frameworks/base.git;a=tree;f=core/res/res/drawable-hdpi;h=ebc31ac3e3261edf0067d82730e3ac6a5debcc19;hb=HEAD)にあるものを利用させていただきました。
 
 ### バーコード/QRコードの読み取りについて
 
