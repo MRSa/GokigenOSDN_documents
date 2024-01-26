@@ -1,6 +1,6 @@
 # 入力画面
 
-**本ページは、[OSDNのDataInputScreenOfGokigenDiaryページ](https://osdn.net/projects/gokigen/wiki/DataInputScreenOfGokigenDiary) のコピーです。投稿当時の情報を移植、掲載しています。**
+**本ページは、[OSDNのページ、DataInputScreenOfGokigenDiary](https://osdn.net/projects/gokigen/wiki/DataInputScreenOfGokigenDiary) のコピーです。投稿当時の情報を移植、掲載しています。**
 
 ------
 
