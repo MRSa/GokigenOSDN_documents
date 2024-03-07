@@ -1,4 +1,6 @@
-# Theta "Thought" ShutterS : Thetaのシャッターを脳波で制御
+# Theta "Thought" ShutterS : Thetaのシャッターを脳波で制御する
+
+-----------------------------
 
 ## 概要
 
@@ -9,13 +11,17 @@ Theta "Thought" ShutterS（以下、本アプリと呼びます）は、[NeuroSk
 
 ![MindWave Mobile 2](images/ttss0.jpg)
 
+-----------------------------
+
 ## インストール
 
 以下リンクのGoogle Play よりインストールしてください。
 
 * [Theta Thought ShutterS(Google Play)](https://play.google.com/store/apps/details?id=jp.osdn.gokigen.thetaview)
 
-## 操作説明
+-----------------------------
+
+## 基本操作
 
 起動後、初期画面を表示しますので、THETAやEEGへの接続ボタンを押してください。
 THETAへの接続ができると、THETAの画像を表示します。画面をタッチして上下左右に動かすと、表示領域を変えることができます。また、ピンチイン、ピンチアウトで表示の拡大・縮小ができます。（しかし、拡大しすぎると表示が乱れてしまいます、、、ご注意ください。）
@@ -46,74 +52,91 @@ THETAへの接続ができると、THETAの画像を表示します。画面を�
 
 **設定画面で「Mindwave Mobile(EEGヘッドセット)を使用する」にチェックを入れたときにTHETA接続ボタンの右隣に表示するボタンです。** ボタンを押して接続中、接続済に切り替えます。
 
-![EEG接続ボタンの状態](TTSS-connectB.png)
+![EEG接続ボタンの状態](images/TTSS-connectB.png)
 
 自動でペアリングをするはずですが、ペアリングが必要だと表示された場合は、**0000** でペアリングしてください。
 
 センサの収集状態取得までには、少し時間がかかることもありますが、ご了承ください。
 
-== モード切替ボタン ==
-THETA接続中にこのボタンを押すと、静止画撮影モード、動画撮影モードの切り替えを行います。'''切り替えを行いたいモードをアイコンで表示しています。現在の撮影モードとは異なりますのでご注意ください。'''
+### モード切替ボタン
 
-現在の撮影モードは、「機器状態を画面に表示」にチェックを入れたとき、画面左上の 2列目「Capture Mode」が '''image'''の時には静止画撮影モード、'''video'''の時には動画撮影モードを示します。あわせてTHETA本体のランプも参照していただければと思います。
+THETA接続中にこのボタンを押すと、静止画撮影モード、動画撮影モードの切り替えを行います。**切り替えを行いたいモードをアイコンで表示しています。現在の撮影モードとは異なりますのでご注意ください。**
 
-[[Embed(TTSS-mode.png, caption=モード切替ボタン)]]
+現在の撮影モードは、「機器状態を画面に表示」にチェックを入れたとき、画面左上の 2列目「Capture Mode」が **image**の時には静止画撮影モード、**video**の時には動画撮影モードを示します。あわせてTHETA本体のランプも参照していただければと思います。
 
-== 設定ボタン ==
+![モード切替ボタン](images/TTSS-mode.png)
+
+### 設定ボタン
+
 設定ボタンを押すと、設定画面を開きます。詳細は、後述する「設定画面について」を確認ください。
 
-== シャッターボタン ==
+### シャッターボタン
+
 THETA接続中にこのボタンを押すと、静止画または動画の撮影を行います。撮影のコマンドを受け付けたかどうかは振動（バイブレーション）で通知し、撮影が完了したときにも画面表示と共に通知します。
 
 動画撮影の場合、最初の一回で撮影スタート、もう一回押すと撮影完了となります。この場合も、振動で通知します。
 
-[[Embed(captured.png, caption=撮影完了通知)]]
+![撮影完了通知](images/captured.png)
 
 なお、EEG接続時には、ATTENTION または MEDIATIONの高まりによる撮影（数値が90以上を5秒間続くと撮影する）が行われます。
 
-= 機器状態の表示 =
-設定画面で「機器状態を画面に表示」を設定した場合の状態表示は、左側にTHETAの状態、右側にEEGの状態を表示します。
-右側のように、THETA未接続のままEEGだけの状態表示をすることも可能です。
+-----------------------------
 
-[[Embed(ttss-status.png, caption=機器状態を表示 (左:THETA、右:EEG))]]
+## 機器状態の表示
+
+設定画面で「機器状態を画面に表示」を設定した場合の状態表示は、左側にTHETAの状態、右側にEEGの状態を表示します。右側のように、THETA未接続のままEEGだけの状態表示をすることも可能です。
+
+![機器状態を表示 (左:THETA、右:EEG)](images/ttss-status.png)
 
 灰色の球体表示が邪魔だと思う場合には、ピンチイン操作で縮小、もしくは拡大してみてください。
-[[Embed(only-eeg.png, caption=EEG状態だけの表示 (ピンチインで球体を縮小表示した例))]]
+
+![EEG状態だけの表示 (ピンチインで球体を縮小表示した例)](images/only-eeg.png)
 
 それぞれの値は以下です。
-== THETAの状態 ==
-=== BATTERY ===
+
+### THETAの状態
+
+#### BATTERY
+
 バッテリーの残量（パーセント）を表示します。
 
-=== Capture Mode ===
-[https://api.ricoh/docs/theta-web-api-v2.1/options/capture_mode/ 撮影モード]を表示します。
-  * image: 静止画撮影モード
-  * video: 動画撮影モード
+#### Capture Mode
 
-=== Exposure Program ===
-[https://api.ricoh/docs/theta-web-api-v2.1/options/exposure_program/ 撮影プログラム]を表示します。
-  * Manual : マニュアルモード
-  * Normal : 通常撮影モード
-  * Aperture : 絞り優先モード (Z1のみ)
-  * Shutter : シャッター速度優先モード
-  * ISO : ISO優先モード
+[撮影モード](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/capture_mode.md)を表示します。
 
-=== STATUS ===
+* image: 静止画撮影モード
+* video: 動画撮影モード
+
+#### Exposure Program
+
+[撮影プログラム](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/exposure_program.md)を表示します。
+
+* Manual : マニュアルモード
+* Normal : 通常撮影モード
+* Aperture : 絞り優先モード (Z1のみ)
+* Shutter : シャッター速度優先モード
+* ISO : ISO優先モード
+
+#### STATUS
+
 撮影状態を示します。
-  * idle : 撮影待ち
-  * shooting : 撮影中 （動画撮影中）
 
-=== FILTER ===
-[https://api.ricoh/docs/theta-web-api-v2.1/options/_filter/ フィルターモード]を示します。
-  * off : フィルターOFF
-  * DR Comp : DR compensation
-  * Noise Reduction : ノイズリダクション
-  * hdr : HDR
-  * Hh hdr : Handheld HDR
+* idle : 撮影待ち
+* shooting : 撮影中 （動画撮影中）
+
+#### FILTER
+
+[フィルターモード](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/_filter.md)を表示します。
+
+* off : フィルターOFF
+* DR Comp : DR compensation
+* Noise Reduction : ノイズリダクション
+* hdr : HDR
+* Hh hdr : Handheld HDR
 
 #### WB
 
-[ホワイトバランス](https://api.ricoh/docs/theta-web-api-v2.1/options/white_balance/)を表示します。
+[ホワイトバランス](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/white_balance.md)を表示します。
 
 * auto
 * daylight
@@ -188,6 +211,8 @@ low-gammaの値です。0～16777215の値をとります。詳細は[ASIC_EEG_P
 
 mid-gammaの値です。0～16777215の値をとります。詳細は[ASIC_EEG_POWER_INT](http://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol#asic_eeg_power_int)を参照してください。
 
+-----------------------------
+
 ## 設定画面について
 
 設定ボタンを押すと設定画面を表示します。
@@ -225,9 +250,9 @@ THETAで画像を撮影するタイミングでライブビュー（プレビュ
 * 1024x512 8fps
 * 1920x960 8fps
 
-## EEG設定
+### EEG設定
 
-### Mindwave Mobile(EEGヘッドセット)を使用する
+#### Mindwave Mobile(EEGヘッドセット)を使用する
 
 EEGと接続する場合に設定してください。
 
@@ -257,6 +282,8 @@ GOKIGEN プロジェクトの[プライバシーポリシーページ](https://g
 #### デバッグ情報
 
 デバッグ情報(LogCat)のページを開きます。
+
+-----------------------------
 
 ## CSVファイルについて
 
@@ -290,6 +317,8 @@ GOKIGEN プロジェクトの[プライバシーポリシーページ](https://g
   * 検出した脳波データです。0～16777215の値をとります。詳細は[ASIC_EEG_POWER_INT](http://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol#asic_eeg_power_int)を参照してください。
 * **[PoorSignal](http://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol#poor_signal_quality)**
   * 信号の状態を示します。0～255の値をとり、数が大きいほどノイズが大きいことを示します。また、値が200の場合には、肌からセンサが離れていることを意味しています。詳細は [Poor Signal Quality](http://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol#poor_signal_quality) を参照してください。
+
+-----------------------------
 
 ## その他
 
@@ -340,20 +369,22 @@ THETAとEEGは、Bluetooth SPPプロトコルで接続しています。
 
 * [https://github.com/MRSa/ThetaView](https://github.com/MRSa/ThetaView)
 
-### EEGについて
+-----------------------------
+
+## EEGについて
 
 脳波について軽く触れます。脳波計は、脳から出ている電気を肌に密着させた電極で検出するセンサです。（体の中にもぐっている脳から出る信号をソナー手が聞いているようなもの、というイメージを持ちました。）
 ![EEGについて](images/eeg.png)
 
 ## 参考リンク
 
-* [THETA Web API v2.1](https://api.ricoh/docs/theta-web-api-v2.1/)
+* [THETA Web API v2.1](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/README.md)
 * [MindWave Mobile 2 : Brainwave starter kit](https://store.neurosky.com/pages/mindwave)
   * [amazon.jp販売ページ](https://www.amazon.co.jp/dp/B07CXN8NKX/)
 * [NeuroSky](http://neurosky.com/)
   * [http://neurosky.com/](http://neurosky.com/)
   * [https://www.neurosky.jp/](https://www.neurosky.jp/)
-  * [http://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol ThinkGear Serial Stream Guide]
+  * [ThinkGear Serial Stream Guide](http://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol)
   * [MindSet Communications Protocol](http://developer.neurosky.com/docs/lib/exe/fetch.php?media=mindset_communications_protocol.pdf)
   * [EEG Band Power values: Units, Amplitudes, and Meaning](http://support.neurosky.com/kb/development-2/eeg-band-power-values-units-amplitudes-and-meaning)
 * [脳波](https://ja.wikipedia.org/wiki/%E8%84%B3%E6%B3%A2)

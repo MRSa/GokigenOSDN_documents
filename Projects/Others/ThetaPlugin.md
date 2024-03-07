@@ -1,6 +1,6 @@
 # THETA プラグインの作成・公開 備忘録
 
-ThetaThoughtShutter というRICOH製 THETAプラグインを [https://pluginstore.theta360.com/plugins/jp.osdn.gokigen.thetathoughtshutter/ RICOH THETA Plug-in Store] で2021年3月に公開しました。
+ThetaThoughtShutter というRICOH製 THETAプラグインを [RICOH THETA Plug-in Store](https://pluginstore.theta360.com/plugins/jp.osdn.gokigen.thetathoughtshutter/) で2021年3月に公開しました。
 このプラグイン公開までの流れを備忘録として残したいと思います。
 
 2023年 5月からは、Thetaプラグインストアは [GitHub](https://github.com/ricohapi/theta-plugins)に移行しました。
@@ -29,7 +29,7 @@ ThetaThoughtShutter というRICOH製 THETAプラグインを [https://pluginsto
 
 Plugin Activity を継承した Activity にして、このあたりを読んで開発するぐらいです。
 
-* https://api.ricoh/docs/theta-plugin/
+* [https://github.com/ricohapi/theta-api-specs/tree/main/ricoh-theta-plugin](https://github.com/ricohapi/theta-api-specs/tree/main/ricoh-theta-plugin)
 
 Android Studio の Enpty Activityプロジェクトを作成し、THETA特有に記述を追加したのは、以下の箇所ぐらいです。
 WifiやBluetooth等の機能を使ったりする場合は、一般的なAndroidアプリケーションと同様に、それらを使うための記述が必要です。
