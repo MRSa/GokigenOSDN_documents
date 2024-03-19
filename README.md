@@ -89,7 +89,7 @@ A01dより派生した、RICOH製デジタルカメラ GR II / GR III / PENTAX�
 
 ------------------------------
 
-## [A01DL : PKRemote Android用Wifiカメラ撮影画像ダウンローダー](https://osdn.net/projects/gokigen/wiki/PKRemote)
+## [A01DL : PKRemote Android用Wifiカメラ撮影画像ダウンローダー](Applications/A01DL/Readme.md)
 
 いろんなカメラに対応した、Wifi経由で接続して撮影画像を転送するためのAndroidアプリケーションです。
 
