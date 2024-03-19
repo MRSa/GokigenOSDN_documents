@@ -4,9 +4,6 @@
 
 ![A01DL](images/A01DL-001.jpg)
 
-- Table of Content
-{:toc}
-
 -----
 
 ## 概要
