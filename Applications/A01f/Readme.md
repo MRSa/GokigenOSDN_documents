@@ -173,9 +173,9 @@ A01f内蔵のオブジェクト検出モデルファイルは、[TensorFlow Lite
 
 #### aoi
 
-* [EfficientDet-Lite0 の aoi](https://osdn.net/projects/gokigen/wiki/A01f/attach/aoi-model0_1.tflite)
-* [EfficientDet-Lite1 の aoi](https://osdn.net/projects/gokigen/wiki/A01f/attach/aoi-model1.tflite)
-* [EfficientDet-Lite2 の aoi](https://osdn.net/projects/gokigen/wiki/A01f/attach/aoi-model2.tflite)
+* [EfficientDet-Lite0 の aoi](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aoi-model0_1.tflite)
+* [EfficientDet-Lite1 の aoi](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aoi-model1.tflite)
+* [EfficientDet-Lite2 の aoi](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aoi-model2.tflite)
 
 #### aohina
 
@@ -200,27 +200,27 @@ A01f内蔵のオブジェクト検出モデルファイルは、[TensorFlow Lite
 
 #### a01fアプリ搭載TFLITEモデル
 
-* [EfficientDet-Lite0 の aoi(0.5.0)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aoi-model0_1.tflite)
+* [EfficientDet-Lite0 の aoi(0.5.0)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aoi-model0_1.tflite)
 * [EfficientDet-Lite0 の aohina(その5, 0.7.0～)](https://osdn.net/projects/gokigen/downloads/77070/aohina-model0-5.tflite/)
 
 #### 試行錯誤TFLITEモデル
 
-* [EfficientDet-Lite0 の aoi(初版)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aoi-model0.tflite)
-* [EfficientDet-Lite0 の aohina](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina-model0.tflite)
-* [EfficientDet-Lite0 の aohina(その1)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina-model0_1.tflite)
-* [EfficientDet-Lite0 の aohina(その2)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina-model0_xx2.tflite)
-* [EfficientDet-Lite0 の aohina(その3)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina-model0_2.tflite)
-* [EfficientDet-Lite0 の aohina(その4)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina-model0-4.tflite)
+* [EfficientDet-Lite0 の aoi(初版)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aoi-model0.tflite)
+* [EfficientDet-Lite0 の aohina](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina-model0.tflite)
+* [EfficientDet-Lite0 の aohina(その1)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina-model0_1.tflite)
+* [EfficientDet-Lite0 の aohina(その2)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina-model0_xx2.tflite)
+* [EfficientDet-Lite0 の aohina(その3)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina-model0_2.tflite)
+* [EfficientDet-Lite0 の aohina(その4)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina-model0-4.tflite)
 * [EfficientDet-Lite0 の aohina(その6)](https://osdn.net/projects/gokigen/downloads/77248/aohina-model0_6.tflite/)
 * [EfficientDet-Lite0 の aohina(その7)](https://osdn.net/projects/gokigen/downloads/77348/aohina-model0_7.tflite/)
-* [EfficientDet-Lite0 の aohina(その8、Epoch10-1)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina0-epoch10_1.tflite)
-* [EfficientDet-Lite0 の aohina(その9)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina-model0_9.tflite)
-* [EfficientDet-Lite0 の aohina(その9、Epoch110)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina0-9_epoch110.tflite)
-* [EfficientDet-Lite0 の aohina(その9、Epoch240)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina0-9_epoch240.tflite)
-* [EfficientDet-Lite0 の aohina(その10、Epoch120)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina0-10_epoch120.tflite)
-* [EfficientDet-Lite0 の aohina(その10、Epoch230)](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina0-10_epoch230.tflite)
-* [EfficientDet-Lite1 の aohina](https://osdn.net/projects/gokigen/wiki/A01f/attach/aohina-model1.tflite)
-* [EfficientDet-Lite0 の fujimiraaru(その１)](https://osdn.net/projects/gokigen/wiki/A01f/attach/fujimiraaru0-1.tflite)
+* [EfficientDet-Lite0 の aohina(その8、Epoch10-1)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina0-epoch10_1.tflite)
+* [EfficientDet-Lite0 の aohina(その9)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina-model0_9.tflite)
+* [EfficientDet-Lite0 の aohina(その9、Epoch110)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina0-9_epoch110.tflite)
+* [EfficientDet-Lite0 の aohina(その9、Epoch240)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina0-9_epoch240.tflite)
+* [EfficientDet-Lite0 の aohina(その10、Epoch120)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina0-10_epoch120.tflite)
+* [EfficientDet-Lite0 の aohina(その10、Epoch230)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina0-10_epoch230.tflite)
+* [EfficientDet-Lite1 の aohina](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_aohina-model1.tflite)
+* [EfficientDet-Lite0 の fujimiraaru(その１)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Applications/A01f/assets/A01f_fujimiraaru0-1.tflite)
 
 ### Image Files with annotation
 
