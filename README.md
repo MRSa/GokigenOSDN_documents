@@ -83,7 +83,7 @@ Olympus Air だけでなく、いろいろなカメラの撮影制御が可能�
 
 ------------------------------
 
-## [A01GR2 : RICOH GR シリーズ / PENTAX / FUJI X / OPC用撮影・参照アプリケーション](https://osdn.net/projects/gokigen/wiki/GR2Control)
+## [A01GR2 : RICOH GR シリーズ / PENTAX / FUJI X / OPC用撮影・参照アプリケーション](Applications/A01GR2/Readme.md)
 
 A01dより派生した、RICOH製デジタルカメラ GR II / GR III / PENTAX一眼 / FUJIFILM製デジタルカメラ / OPC用の遠隔操作用Androidアプリケーションです。
 

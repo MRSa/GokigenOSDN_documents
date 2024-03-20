@@ -213,8 +213,6 @@ ONに設定すると撮影補助線を表示します。
 
 #### プライバシーポリシー
 
-GOKIGEN プロジェクトの[PrivacyPolicy プライバシーポリシー]ページを開きます。
-
 [GOKIGENプロジェクト](https://osdn.net/projects/gokigen/)の[プライバシーポリシー](https://github.com/MRSa/GokigenOSDN_documents/blob/main/PrivacyPolicy.md)ページを開きます。
 
 #### デバッグ情報
