@@ -70,9 +70,9 @@ AndroidのWearOSで、「スライドショー」を行う非常にシンプル�
 
 ------------------------------
 
-## [A01c : OlympusAir / RICOH THETA用撮影アプリケーション(その３、WearOS(Android Wear)で撮影する版)](https://osdn.net/projects/gokigen/wiki/A01c)
+## [A01c : OlympusAir / RICOH THETA用撮影アプリケーション(その３、Wear OS で撮影する版)](Applications/A01c/Readme.md)
 
-[Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit")を使用したWearOS(Android Wear)用アプリケーションです。
+[Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit")を使用したWear OS用アプリケーションです。
 
 ------------------------------
 
