@@ -64,7 +64,7 @@ AndroidのWearOSで、「スライドショー」を行う非常にシンプル�
 
 ------------------------------
 
-## [AirA01b : AirA01b OlympusAir用撮影・参照Androidアプリケーション (その２、スマホカメラと併用版)](https://osdn.net/projects/gokigen/wiki/AirA01b)
+## [AirA01b : AirA01b OlympusAir用撮影・参照Androidアプリケーション (その２、スマホカメラと併用版)](Applications/AirA01b/Readme.md)
 
 [Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit")を使用したAndroidアプリケーションです。縦型です。
 
