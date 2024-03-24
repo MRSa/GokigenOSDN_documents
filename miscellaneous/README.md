@@ -14,8 +14,8 @@
   - [A01c](https://github.com/MRSa/A01c)の操作方法を取りまとめたものです。
 - **[EULA_OlympusCameraKit_forDevelopers_jp.pdf](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/EULA_OlympusCameraKit_ForDevelopers_jp.pdf)**
   - Olympus Camera Kit の使用許諾書です。一部のアプリケーションは、この使用許諾に基づいています。
-- **[Fujifilm製デジタルカメラとの通信について](FujiXCommands.md)**
-  - [Fujifilm X Camera Commands](FujiXCommands.md) です。
+- **[Fujifilm製デジタルカメラとの通信について](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Projects/Others/FujiXCommands.md)**
+  - [Fujifilm X Cameraの通信コマンド解析](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Projects/Others/FujiXCommands.md) です。
 
 --------------------------------------------------------
 
