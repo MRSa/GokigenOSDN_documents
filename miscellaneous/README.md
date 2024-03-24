@@ -24,7 +24,7 @@
 - [EEG(Electroencephalography)について(pptx)](https://github.com/MRSa/GokigenOSDN_documents/raw/main/Projects/Others/aboutEEG.pptx)
   - 脳波に関することについて調べた内容です。
 
-- [THETA プラグインの作成・公開 備忘録]([ThetaPlugin.md](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Projects/Others/ThetaPlugin.md))
+- [THETA プラグインの作成・公開 備忘録](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Projects/Others/ThetaPlugin.md)
   - ThetaThoughtShutter というRICOH製 THETAプラグインを [RICOH THETA Plug-in Store](https://pluginstore.theta360.com/plugins/jp.osdn.gokigen.thetathoughtshutter/) で2021年3月に公開しました。このプラグイン公開までの流れの備忘録としてまとめました。
 
 --------------------------------------------------------
@@ -34,7 +34,7 @@
 - **[file_downloader.xlsm](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/file_downloader.xlsm)**
   - OSDNのWiki添付ファイル一覧を一括ダウンロードするために、指定したURLからファイルをダウンロードするためのExcelマクロです。
 
-- **リポジトリ移動時の備忘録(osdn_memo.md)**
+- **[リポジトリ移動時の備忘録](osdn_memo.md)**
   - OSDNから[リポジトリを移動した時の備忘録](osdn_memo.md)です。
 
 --------------------------------------------------------
