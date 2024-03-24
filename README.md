@@ -1,4 +1,4 @@
-# [GOKIGENプロジェクト / OSDN GOKIGEN Project](https://osdn.net/projects/gokigen/wiki/FrontPage)
+# [OSDN GOKIGEN プロジェクト](https://osdn.net/projects/gokigen/wiki/FrontPage)
 
 ゴキゲン！なモバイルアプリケーションを書きたいなあ、とプロジェクトを立ち上げました。 (OSDNからGitHubに移動させました。)
 
@@ -46,7 +46,7 @@ GOKIGENプロジェクトの[プライバシーポリシー](PrivacyPolicy.md)�
 
 ------------------------------
 
-### [AirA01b : AirA01b OlympusAir用撮影・参照Androidアプリケーション (縦型)](Applications/AirA01b/Readme.md)
+### [AirA01b : OlympusAir用撮影・参照Androidアプリケーション (縦型)](Applications/AirA01b/Readme.md)
 
 [Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit")を使用したAndroidアプリケーションです。縦型です。  
 スマートフォン内蔵のカメラと同時撮影ができます。
@@ -138,7 +138,7 @@ Wear OS用の非常にシンプルな月間カレンダーです。タイルで�
 
 ------------------------------
 
-## Android ADK 関連プロジェクト
+## Android ADK 関連
 
 ### [紙相撲マシン ： PaperSumoBattleField](Projects/PaperSumoBattleField/Readme.md)
 

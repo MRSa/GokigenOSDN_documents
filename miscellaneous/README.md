@@ -26,6 +26,7 @@
 
 - [THETA プラグインの作成・公開 備忘録](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Projects/Others/ThetaPlugin.md)
   - ThetaThoughtShutter というRICOH製 THETAプラグインを [RICOH THETA Plug-in Store](https://pluginstore.theta360.com/plugins/jp.osdn.gokigen.thetathoughtshutter/) で2021年3月に公開しました。このプラグイン公開までの流れの備忘録としてまとめました。
+  -　2023 年 05 月 に、THETAプラグインストアの公開場所は [GitHub](https://github.com/ricohapi/theta-plugins/blob/main/README.ja.md) に引っ越しとなりました。（[Theta "Thought" Shutter](https://github.com/ricohapi/theta-plugins/blob/main/plugins/jp.osdn.gokigen.thetathoughtshutter/README.ja.md)）
 
 --------------------------------------------------------
 
