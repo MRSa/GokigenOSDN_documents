@@ -1,6 +1,6 @@
 # [GOKIGENプロジェクト / OSDN GOKIGEN Project](https://osdn.net/projects/gokigen/wiki/FrontPage)
 
-ゴキゲン！なモバイルアプリケーションを書きたいなあ、とプロジェクトを立ち上げました。
+ゴキゲン！なモバイルアプリケーションを書きたいなあ、とプロジェクトを立ち上げました。 (OSDNからGitHubに移動させました。)
 
 * 元のページ： [https://osdn.net/projects/gokigen/wiki/FrontPage](https://osdn.net/projects/gokigen/wiki/FrontPage)
 
@@ -58,7 +58,7 @@ AndroidのWearOSで、「スライドショー」を行う非常にシンプル�
 
 ------------------------------
 
-## [AirA01a : OlympusAir用撮影・参照Androidアプリケーション](https://osdn.net/projects/gokigen/wiki/AirA01a)
+## [AirA01a : OlympusAir用撮影・参照Androidアプリケーション](Applications/AirA01a/Readme.md)
 
 [Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit") のサンプルアプリ [Captureサンプル](https://opc.olympus-imaging.com/sdkdocs/data/SampleAppGuide/capture_sample_android.html) および [Viewerサンプル](https://opc.olympus-imaging.com/sdkdocs/data/SampleAppGuide/viewer_sample_android.html) を改造したAndroidアプリケーションです。
 

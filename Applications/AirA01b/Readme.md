@@ -609,7 +609,7 @@ AirA01b は、次のパーミッションを指定し使用しています。
 
 ### ソースコード
 
-AirA01b のソースコードは、以下のSVNリポジトリから取得可能です。随時更新していきます。
+AirA01b のソースコードは、以下のGitリポジトリから取得可能です。随時更新していきます。
 
 * [https://github.com/MRSa/AirA01b.git](https://github.com/MRSa/AirA01b.git)
 
