@@ -53,6 +53,13 @@ GOKIGENプロジェクトの[プライバシーポリシー](PrivacyPolicy.md)�
 
 ------------------------------
 
+### [AirA01c : OLYMPUS AIR A01のメンテナンスを行うAndroidアプリケーション](Applications/AirA01b/Readme.md)
+
+AirA01cは、[OLYMPUS（現OMデジタルソリューションズ）社](https://www.olympus.co.jp/technology/museum/camera/products/digital-opf/aira-01/)製デジタルカメラ[OLYMPUS AIR A01](https://jp.omsystem.com/cms/record/dslr/a01/index.pdf)にWi-Fi経由で接続し、メンテナンスを行うAndroid用アプリケーションです。
+[既に公開が終了した、OLYMPUS純正のアプリ](https://digital-faq.jp.omsystem.com/faq/public/app/servlet/qadoc?QID=005801)「[OA. Central](https://www.google.com/search?q=oa.+central+olympus+air+a01)」で実施できた操作の肩代わりを目的としています。撮影機能などは持ちません。
+
+------------------------------
+
 ### [A01d : OlympusAir用撮影アプリケーション(OlympusAirを望遠鏡として使ってみよう版)](Applications/A01d/Readme.md)
 
 [Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit")を使用してOlympus Airのライブビューの拡大機能を使って遠くのモノを見るためのAndroidアプリケーションです。
