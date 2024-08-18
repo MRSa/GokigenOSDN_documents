@@ -21,7 +21,7 @@
     - [「こんな時は？」画面](#こんな時は画面)
   - [その他情報](#その他情報)
     - [permissionについて](#permissionについて)
-    - [制御対象カメラについての情報](#制御対象カメラについての情報)
+    - [制御対象カメラ(OLYMPUS AIR A01)についての情報](#制御対象カメラolympus-air-a01についての情報)
     - [ソースコード](#ソースコード)
 
 -----
@@ -187,6 +187,28 @@ AirA01cは、「オープンプラットフォームカメラ通信仕様書 1.0
 
 ![スタンドアロン撮影 設定ダイアログ](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-standalone.png?raw=true)
 
+スタンドアロン撮影 設定ダイアログは、以下の項目が設定できます。
+
+- **撮影モード**
+  - iAuto, P, A, S, M, ART, movie, Genius
+- **ピクチャーモード**
+  - I_FINISH, VIVID, NATURAL, FLAT, Portrait, Monotone, ePortrait, COLOR_CREATOR, POPART, FANTASIC_FOCUS,
+  - DAYDREAM, LIGHT_TONE, ROUGH_MONOCHROME, TOY_PHOTO, MINITURE, CROSS_PROCESS,
+  - GENTLE_SEPIA, DRAMATIC_TONE, LIGNE_CLAIR, PASTEL, VINTAGE, PARTCOLOR
+- **ホワイトバランス**
+  - WB_AUTO, MWB_FINE, MWB_SHADE, MWB_CLOUD, MWB_LAMP, MWB_FLUORESCENCE1, MWB_WATER_1, WB_CUSTOM1
+- **ISO感度**
+  - Auto, Low, 200 ～ 12800
+- **アスペクト比**
+  - 04_03, 16_09, 03_02, 06_06, 03_04
+- **動画画質 (movieモードのみ)**
+  - QUALITY_MOVIE_FULL_HD_FINE, QUALITY_MOVIE_FULL_HD_NORMAL, QUALITY_MOVIE_HD_FINE,
+  - QUALITY_MOVIE_HD_NORMAL, QUALITY_MOVIE_SHORT_MOVIE
+- **絞り値 (A, Mモードのみ)**
+  - 1.0 ～ 91
+- **シャッター速度 (S, Mモードのみ)**
+  - 4" ～ 16000
+
 ##### カメラ設定ダイアログ
 
 本ダイアログでは、スタンドアロン撮影で使用する設定項目を変更することができます。
@@ -194,6 +216,21 @@ AirA01cは、「オープンプラットフォームカメラ通信仕様書 1.0
 設定を変更し、画面下部の『登録』ボタンを押すと、カメラに設定を反映させます。『登録』ボタンを押すまで、設定は反映されませんのでご注意ください。
 
 ![カメラ設定ダイアログ](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-others.png?raw=true)
+
+カメラ設定ダイアログは、以下の項目が設定できます。
+
+- **スリープ時間**
+  - 1, 3, 5, 10
+- **操作音**
+  - OFF, 1, 2, 3, 4, 5
+- **レンズリセット**
+  - OFF, ON
+- **撮影画質**
+  - 4608x3456, 3200x2400, 2560x1920, 1920x1440, 1600x1200, 1280x960, 1024x768, 640x480
+- **圧縮率**
+  - CMP_2_7, CMP_4, CMP_8, CMP_12
+- **RAW撮影**
+  - OFF, ON
 
 -----
 
@@ -223,17 +260,19 @@ AirA01c は、次のパーミッションを指定し使用しています。
 - android.permission.ACCESS_MEDIA_LOCATION
   - 現在未使用 (撮影画像から位置情報を取得するため、ベースとしたアプリから消し忘れた権限でした...すみません)
 
-### 制御対象カメラについての情報
+### 制御対象カメラ(OLYMPUS AIR A01)についての情報
 
 [**OLYMPUS AIR A01**](https://jp.omsystem.com/cms/record/dslr/a01/index.pdf) の関連リンクです。
 
-- [アプリで楽しむ一眼画質、オープンプラットフォームカメラ「OLYMPUS AIR（エアー）A01」を発売(2015年2月5日)](https://www.olympus.co.jp/jp/news/2015a/nr150205opcj.html)
+- [アプリで楽しむ一眼画質、オープンプラットフォームカメラ「OLYMPUS AIR（エアー）A01」を発売 (2015年2月5日)](https://www.olympus.co.jp/jp/news/2015a/nr150205opcj.html)
 - [「OLYMPUS AIR A01」 は 2018年 3月 31日をもって販売を終了いたしました。](https://digital-faq.jp.omsystem.com/faq/public/app/servlet/relatedqa?QID=005796)
 - [主な仕様](https://jp.omsystem.com/cms/record/dslr/a01/spec.pdf)
 - [製品外観](https://jp.omsystem.com/cms/record/dslr/a01/design.pdf)
 - [Q&A(よくあるお問い合わせ)](https://digital-faq.jp.omsystem.com/faq/public/app/servlet/search?PROD=001005001&MAIN=001)
 - [How can we help you with your AIR A01(英語サイト)](https://learnandsupport.getolympus.com/support/air-a01)
 - [AIR A01 Instruction Manual(英語)](https://learnandsupport.getolympus.com/sites/default/files/media/files/2018/03/AIR_A01_MANUAL.pdf)
+- [OlympusCameraKit(英語, Wayback Machine経由)](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip)
+- [OPC Communication Protocol(英語, Wayback Machine経由)](https://web.archive.org/web/20210325165614/https://dl-support.olympus-imaging.com/opc/files/en/OPC_Communication_Protocol_EN.zip)
 
 ### ソースコード
 
