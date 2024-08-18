@@ -11,9 +11,13 @@
   - [画面遷移](#画面遷移)
     - [「Home」画面](#home画面)
     - [「OLYMPUS AIR設定」画面](#olympus-air設定画面)
-      - [メンテナンスコマンドについて](#メンテナンスコマンドについて)
-      - [単体コマンド実行について](#単体コマンド実行について)
-      - [その他](#その他)
+      - [microSDカード](#microsdカード)
+      - [水準器調整](#水準器調整)
+      - [OLYMPUS AIR設定](#olympus-air設定)
+      - [高度](#高度)
+        - [単体コマンド 発行ダイアログ](#単体コマンド-発行ダイアログ)
+        - [スタンドアロン撮影 設定ダイアログ](#スタンドアロン撮影-設定ダイアログ)
+        - [カメラ設定ダイアログ](#カメラ設定ダイアログ)
     - [「こんな時は？」画面](#こんな時は画面)
   - [その他情報](#その他情報)
     - [permissionについて](#permissionについて)
@@ -41,6 +45,8 @@ AirA01cは、以下の機能を持ちます。
 - カード内画像の全消去
 - ピクセルマッピング
 - 水準器の調整（リセット、キャリブレーション）
+- スタンドアローン撮影時の設定（撮影モード、ピクチャーモード、ホワイトバランス、ISO感度等）
+- カメラの設定（操作音、スリープまでの時間、レンズリセット、RAW撮影等）
 - 操作の説明
 
 ### 操作概要
@@ -60,6 +66,7 @@ Google Play で配布しています。アプリケーションを[Google Play�
 - [https://play.google.com/store/apps/details?id=jp.osdn.gokigen.aira01c](https://play.google.com/store/apps/details?id=jp.osdn.gokigen.aira01c)
 
 アプリケーションのapkファイルは、[GitHubのリリース](https://github.com/MRSa/AirA01c/releases)にも置いています。Android バージョン4.0 以上に対応しています。
+Androidのバージョンが古く、Google Playにアクセスできない場合には、こちらのapkファイルを取得し、インストールをしてみてください。
 
 -----
 
@@ -71,6 +78,10 @@ AirA01cの画面遷移を以下に示します。起動直後は、「Home」画
 接続後、メンテナンス操作は「OLYMPUS AIR設定」画面で操作を行ってください。この他に、操作で困ったときの説明を記載した「こんな時は？」画面があります。
 
 ![AirA01c ナビゲーション](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-nav.png?raw=true)
+
+画面右上の『(i)』ボタンを押すと、AirA01cの操作説明ページ（本ページ）へのリンクを表示します。リンクをタッチすることで、本ページを開くとことができます。
+
+![本ページへのリンク](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-credit.png?raw=true)
 
 -----
 
@@ -123,24 +134,41 @@ OLYMPUS AIRのメンテナンス操作を行う画面です。
 
 ![メンテナンスコマンド実行](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-execute.png?raw=true)
 
-#### メンテナンスコマンドについて
-
 AirA01cでは、以下のメンテナンスコマンドが実行可能です。
+
+#### microSDカード
 
 - **フォーマット**
   - microSDカードのフォーマットを行います。実行後は、フォルダ等もすべて消去されます。
 - **全消去**
   - microSDカードの画像ファイルをすべて消去します。画像ファイルではないファイルは残ります。
+
+#### 水準器調整
+
 - **水準器リセット**
   - 水準器の原点復帰を行います。
 - **水準器キャリブレーション**
   - カメラの現在の姿勢を原点とするよう、水準器を調整します。
+
+#### OLYMPUS AIR設定
+
 - **ピクセルマッピング**
   - 実行すると、ピクセルマッピングを行います。実行時にはレンズを外し、ボディキャップを装着してください。
 - **設定初期化**
   - 実行すると、ネットワーク設定等を除くカメラの設定を初期化します。
 
-#### 単体コマンド実行について
+#### 高度
+
+- **コマンド**
+  - OLYMPUS AIR A01に対し、単体のコマンドを発行するダイアログ（単体コマンド 発行ダイアログ）を表示します。
+
+- **スタンドアロン撮影**
+  - スタンドアロン撮影時の設定を変更するダイアログ（スタンドアロン撮影 設定ダイアログ）を表示します。
+
+- **その他**
+  - カメラの設定を変更するダイアログ（カメラ設定ダイアログ）を表示します。
+
+##### 単体コマンド 発行ダイアログ
 
 AirA01cは、「オープンプラットフォームカメラ通信仕様書 1.0」に基づいて作成しており、この通信仕様書のコマンド群を単独で送ることができます。
 
@@ -151,11 +179,21 @@ AirA01cは、「オープンプラットフォームカメラ通信仕様書 1.0
 
 ![OLYMPUS AIR A01の動作モード](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/OlympusAir-Modes.png?raw=true)
 
-#### その他
+##### スタンドアロン撮影 設定ダイアログ
 
-『その他』ボタンを押すと、AirA01cの操作説明ページ（本ページ）へのリンクを表示します。リンクをタッチすることで、本ページを開くとことができます。
+本ダイアログでは、スタンドアロン撮影で使用する設定項目を変更することができます。
+ダイアログを開くと、現在の設定が表示されます。右上の『Refresh』ボタンを押すと、カメラの設定データを再度読み出します。
+設定を変更し、画面下部の『設定』ボタンを押すと、カメラに設定を反映させます。『設定』ボタンを押すまで、設定は反映されませんのでご注意ください。
 
-![本ページへのリンク](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-credit.png?raw=true)
+![スタンドアロン撮影 設定ダイアログ](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-standalone.png?raw=true)
+
+##### カメラ設定ダイアログ
+
+本ダイアログでは、スタンドアロン撮影で使用する設定項目を変更することができます。
+ダイアログを開くと、現在の設定が表示されます。右上の『Refresh』ボタンを押すと、カメラの設定データを再度読み出します。
+設定を変更し、画面下部の『登録』ボタンを押すと、カメラに設定を反映させます。『登録』ボタンを押すまで、設定は反映されませんのでご注意ください。
+
+![カメラ設定ダイアログ](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-others.png?raw=true)
 
 -----
 
@@ -189,6 +227,7 @@ AirA01c は、次のパーミッションを指定し使用しています。
 
 [**OLYMPUS AIR A01**](https://jp.omsystem.com/cms/record/dslr/a01/index.pdf) の関連リンクです。
 
+- [アプリで楽しむ一眼画質、オープンプラットフォームカメラ「OLYMPUS AIR（エアー）A01」を発売(2015年2月5日)](https://www.olympus.co.jp/jp/news/2015a/nr150205opcj.html)
 - [「OLYMPUS AIR A01」 は 2018年 3月 31日をもって販売を終了いたしました。](https://digital-faq.jp.omsystem.com/faq/public/app/servlet/relatedqa?QID=005796)
 - [主な仕様](https://jp.omsystem.com/cms/record/dslr/a01/spec.pdf)
 - [製品外観](https://jp.omsystem.com/cms/record/dslr/a01/design.pdf)
