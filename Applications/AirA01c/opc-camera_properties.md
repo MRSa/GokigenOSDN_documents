@@ -3,6 +3,7 @@
 - [OLYMPUS AIR A01 カメラプロパティ](#olympus-air-a01-カメラプロパティ)
   - [基本](#基本)
   - [アートフィルター関連](#アートフィルター関連)
+  - [仕上がり・ピクチャーモード関連](#仕上がりピクチャーモード関連)
 
 ----
 
@@ -50,6 +51,9 @@
 
 ## アートフィルター関連
 
+OLYMPUS AIR A01のアートフィルター関連の設定は、[OLYMPUS PEN E-PL8](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) と同等のようです。
+[E-PL8の取扱説明書](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) も参照してください。
+
 | 分類 | 項目 | プロパティ値 | 補足 | Wi-Fi | BLE | iAuto | P | A | S | M | ART | movieP | movieA | movieS | movieM | 備考 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
 | アートフィルター | アートフィルター　種別 | RECENTLY_ART_FILTER | POPART, FANTASIC_FOCUS, DAYDREAM, LIGHT_TONE, ROUGH_MONOCHROME, TOY_PHOTO, MINIATURE, CROSS_PROCESS, GENTLE_SEPIA, DRAMATIC_TONE, LIGNE_CLAIR, PASTEL, VINTAGE, PARTCOLOR | RW | RW | - | - |- | - | - | OK | - | - | - | - | - |
@@ -95,3 +99,47 @@
 | ^ | アートフィルター　ブラケット撮影 パートカラーフィルターの使用 | BRACKET_PICT_PARTCOLOR | ON, OFF | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
 
 ----
+
+## 仕上がり・ピクチャーモード関連
+
+OLYMPUS AIR A01のピクチャーモード関連の設定も、[OLYMPUS PEN E-PL8](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) と同等のようです。
+アートフィルター同様、[E-PL8の取扱説明書](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) も合わせて参照してください。
+
+| 分類 | 項目 | プロパティ値 | 補足 | Wi-Fi | BLE | iAuto | P | A | S | M | ART | movieP | movieA | movieS | movieM | 備考 |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| ピクチャーモード | 仕上がり・ピクチャーモード | COLORTONE | FLAT, NATURAL, Monotone, Portrait, I_FINISH, VIVID, ePortrait, COLOR_CREATOR, … | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (コントラスト/i-Finish) | CONTRAST_I_FINISH | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (コントラスト/Vivid) | CONTRAST_VIVID | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (コントラスト/NATURAL) | CONTRAST_NATURAL | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (コントラスト/FLAT) | CONTRAST_FLAT | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (コントラスト/Portrait) | CONTRAST_SOFT | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (コントラスト/モノトーン) | CONTRAST_MONOCHROME | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (シャープネス/i-Finish) | SHARP_I_FINISH | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (シャープネス/Vivid) | SHARP_VIVID | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (シャープネス/NATURAL) | SHARP_NATURAL | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (シャープネス/FLAT) | SHARP_FLAT | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (シャープネス/Portrait) | SHARP_SOFT | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (シャープネス/モノトーン) | SHARP_MONOCHROME | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (彩度/i-Finish) | SATURATION_LEVEL_I_FINISH | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (彩度/Vivid) | SATURATION_LEVEL_VIVID | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (彩度/NATURAL) | SATURATION_LEVEL_NATURAL | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (彩度/FLAT) | SATURATION_LEVEL_FLAT | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (彩度/Portrait) | SATURATION_LEVEL_SOFT | -2, -1, 0, +1, +2 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (階調/i-Finish) | TONE_I_FINISH | AUTO, NORMAL, HIGHKEY, LOWKEY | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (階調/Vivid) | TONE_VIVID | AUTO, NORMAL, HIGHKEY, LOWKEY | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (階調/NATURAL) | TONE_NATURAL | AUTO, NORMAL, HIGHKEY, LOWKEY | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (階調/FLAT) | TONE_FLAT | AUTO, NORMAL, HIGHKEY, LOWKEY | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (階調/Portrait) | TONE_SOFT | AUTO, NORMAL, HIGHKEY, LOWKEY | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (階調/モノトーン) | TONE_MONOCHROME | AUTO, NORMAL, HIGHKEY, LOWKEY | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | ピクチャーモードの仕上がり設定 (効果協調/i-Finish) | EFFECT_LEVEL_I_FINISH | HIGH, STANDARD, NORMAL | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | トーンコントロール (シャドー部) | TONE_CONTROL_LOW | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | OK | - | - | - | - | - |
+| ^ | トーンコントロール (中間部) | TONE_CONTROL_MIDDLE | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | OK | - | - | - | - | - |
+| ^ | トーンコントロール (ハイライト部) | TONE_CONTROL_HIGH | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | OK | - | - | - | - | - |
+| ^ | モノクロフィルター効果 (ピクチャーモード: モノトーン) | MONOTONEFILTER_MONOCHROME | NORMAL, YELLOW, ORANGE, RED, GREEN | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | モノクロフィルター効果 (アートフィルター: ラフモノクローム) | MONOTONEFILTER_ROUGH_MONOCHROME | NORMAL, YELLOW, ORANGE, RED, GREEN | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | モノクロフィルター効果 (アートフィルター: ドラマチックトーン) | MONOTONEFILTER_DRAMATIC_TONE | NORMAL, YELLOW, ORANGE, RED, GREEN | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | 調色効果 (ピクチャーモード: モノトーン) | MONOTONECOLOR_MONOCHROME | NORMAL, LIKE_SEPIA, LIKE_BLUE, LIKE_PURPLE, LIKE_GREEN | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | 調色効果 (アートフィルター: ラフモノクローム) | MONOTONECOLOR_ROUGH_MONOCHROME | NORMAL, LIKE_SEPIA, LIKE_BLUE, LIKE_PURPLE, LIKE_GREEN | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | 調色効果 (アートフィルター: ドラマチックトーン) | MONOTONECOLOR_DRAMATIC_TONE | NORMAL, LIKE_SEPIA, LIKE_BLUE, LIKE_PURPLE, LIKE_GREEN | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | カラークリエーター用　色相 | COLOR_CREATOR_COLOR | 0 ～ 29 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | カラークリエーター用　彩度 | COLOR_CREATOR_VIVID | -4 ～ +3 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
