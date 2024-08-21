@@ -4,7 +4,7 @@
 
 ## 概要
 
-AirA01b は、[Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/) を使用したOLYMPUS AIR用のAndroidアプリケーションです。 [オープンプラットフォームカメラ OLYMPUS AIR A01](https://olympus-imaging.jp/product/opc/a01/) に対応しています。
+AirA01b は、 [Olympus Camera Kit](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip "Olympus Camera Kit") を使用したOLYMPUS AIR用のAndroidアプリケーションです。 [オープンプラットフォームカメラ OLYMPUS AIR A01](https://jp.omsystem.com/cms/product/opc/a01/index.html) に対応しています。
 AirA01aとの違いは、スマートフォンのカメラと同時に撮影が可能となっていることと、縦画面レイアウトにしたところが大きく異なります。なるべく撮影のサクサク感をより高められるように努力しています。
 
 ---------
@@ -25,7 +25,7 @@ AirA01b が持つ機能の概要を示します。
   * スマートフォン内の画像を加工
     * 上下結合、左右結合、ピクチャーインピクチャー
 
----------
+----
 
 ![AirA01b撮影イメージ](images/AirA01b_xxxxx.jpg)
 
@@ -205,7 +205,8 @@ Olympus Airの撮影設定が表示されます。表示されている値をタ
 * **Movie**
   * 動画モード : 動画を撮影するモードです
 
-==== カラートーン ====
+##### カラートーン
+
 仕上がり・ピクチャーモードの設定を行います。以下の設定が可能です。
 
 * **i-Enhance**
@@ -494,7 +495,7 @@ OLYMPUS AIR A01の持つカメラプロパティを一覧表示する画面で�
 カメラプロパティ画面で編集した値は、すぐにカメラに反映させるのではなく、本画面から抜けるときに一括でカメラに設定を行います。
 編集中の値を画面オープン時の状態に戻すには右上のボタンを押してください。
 
-なお、カメラプロパティの編集可否条件や意味の詳細は、[Olympus Camera Kit カメラプロパティリスト](https://opc.olympus-imaging.com/sdkdocs/data/PropertyList/property_list.html) を参照してください。
+なお、カメラプロパティの編集可否条件や意味の詳細は、[Olympus Camera Kit カメラプロパティリスト](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/opc-camera_properties.md) を参照してください。
 
 ### カメラ内撮影画像一覧画面
 
@@ -618,5 +619,6 @@ AirA01b のソースコードは、以下のGitリポジトリから取得可能
 AirA01b は、OlympusCameraKit を使用してOLYMPUS AIR A01と通信を行います。そのため、以下の「SDKダウンロード許諾契約書」の条件に従います。
 
 * [EULA_OlympusCameraKit_ForDevelopers_jp.pdf](https://github.com/MRSa/gokigen/blob/5ec908fdbe16c4de9e37fe90d70edc9352b6f948/osdn-svn/Documentations/miscellaneous/EULA_OlympusCameraKit_ForDevelopers_jp.pdf)
+* [EULA_OlympusCameraKit_ForDevelopers_en.pdf](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/EULA_OlympusCameraKit_ForDevelopers_en.pdf)
 
 以上

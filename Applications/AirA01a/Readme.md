@@ -8,9 +8,9 @@
 
 ## 概要
 
-AirA01a は、 [Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/)のサンプルアプリ([撮影サンプルアプリ](https://opc.olympus-imaging.com/sdkdocs/data/SampleAppGuide/capture_sample_android.html) および [オープンプラットフォームカメラ OLYMPUS AIR A01](https://opc.olympus-imaging.com/sdkdocs/data/SampleAppGuide/viewer_sample_android.html)を改造したAndroidアプリケーションです。
+AirA01a は、 [Olympus Camera Kit](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip "Olympus Camera Kit")のサンプルアプリ(撮影サンプルアプリ および ビューアーサンプルアプリ)を改造したAndroidアプリケーションです。
 
-[オープンプラットフォームカメラ OLYMPUS AIR A01](https://olympus-imaging.jp/product/opc/a01/) に対応しています。
+[オープンプラットフォームカメラ OLYMPUS AIR A01](https://jp.omsystem.com/cms/product/opc/a01/index.html) に対応しています。
 
 撮影サンプルアプリにビューアーサンプルアプリを結合し、一部メッセージの日本語化に加え、次の機能を追加しています。
 
@@ -19,7 +19,7 @@ AirA01a は、 [Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/)の
 * 顔検出AF
 * マニュアルフォーカス切替え (静止画撮影時のみ)
 * 静止画連続撮影（いわゆるブラケッティング撮影）
-* 補助線の表示（5種類)
+* 補助線の表示（5種類）
 * 制御パネルの非表示/表示
 * 現在の焦点距離表示
 * 測光モードの設定・変更
@@ -51,7 +51,7 @@ Android バージョン4.0 以上に対応しています。 アプリケーシ�
 
 ## 操作説明
 
-基本操作および機能は、Android版Olympus Camera Kitの [撮影サンプルアプリ](https://opc.olympus-imaging.com/sdkdocs/data/SampleAppGuide/capture_sample_android.html) および [ビューアーサンプルアプリ](https://opc.olympus-imaging.com/sdkdocs/data/SampleAppGuide/viewer_sample_android.html) と同じです。
+基本操作および機能は、Android版Olympus Camera Kitの 撮影サンプルアプリ および ビューアーサンプルアプリ と同じです。
 起動直後はカメラ接続画面を経由して撮影画面を表示します。 画面左上にあるボタンで撮影画像一覧画面へ切り替えます。画面右上にある歯車ボタンで設定画面へ切り替えます。
 
 ![AirA01aの画面遷移](images/AirA01a_aira01a-sct.png)
@@ -83,7 +83,7 @@ AirA01aを起動すると、カメラ接続画面を表示します。
 
 ![撮影画面](images/AirA01a_aira01a-lv1.png)
 
-操作方法は、[撮影サンプルアプリ](https://opc.olympus-imaging.com/sdkdocs/data/SampleAppGuide/capture_sample_android.html) とほぼおなじですが、サンプルアプリから幾つか機能拡張しています。
+操作方法は、撮影サンプルアプリとほぼおなじですが、サンプルアプリから幾つか機能拡張しています。
 
 ![撮影画面の説明](images/AirA01a_aira01a-overall2.png)
 
@@ -555,5 +555,6 @@ AirA01a のソースコードは、以下のリポジトリから取得可能で
 AirA01a は、OlympusCameraKit を使用してOLYMPUS AIR A01と通信を行います。そのため、以下の「SDKダウンロード許諾契約書」の条件に従います。
 
 * [EULA_OlympusCameraKit_ForDevelopers_jp.pdf](https://github.com/MRSa/gokigen/blob/5ec908fdbe16c4de9e37fe90d70edc9352b6f948/osdn-svn/Documentations/miscellaneous/EULA_OlympusCameraKit_ForDevelopers_jp.pdf)
+* [EULA_OlympusCameraKit_ForDevelopers_en.pdf](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/EULA_OlympusCameraKit_ForDevelopers_en.pdf)
 
 以上

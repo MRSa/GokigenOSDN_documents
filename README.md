@@ -42,13 +42,13 @@ GOKIGENプロジェクトの[プライバシーポリシー](PrivacyPolicy.md)�
 
 ### [AirA01a : OlympusAir用撮影・参照Androidアプリケーション（横型）](Applications/AirA01a/Readme.md)
 
-[Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit") のサンプルアプリ [Captureサンプル](https://opc.olympus-imaging.com/sdkdocs/data/SampleAppGuide/capture_sample_android.html) および [Viewerサンプル](https://opc.olympus-imaging.com/sdkdocs/data/SampleAppGuide/viewer_sample_android.html) を改造したAndroidアプリケーションです。
+[Olympus Camera Kitのサンプルアプリ](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip) Captureサンプル および Viewerサンプル を改造したAndroidアプリケーションです。
 
 ------------------------------
 
 ### [AirA01b : OlympusAir用撮影・参照Androidアプリケーション (縦型)](Applications/AirA01b/Readme.md)
 
-[Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit")を使用したAndroidアプリケーションです。縦型です。  
+[Olympus Camera Kit](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip) を使用したOLYMPUS AIR A01用のAndroidアプリケーションです。縦型です。  
 スマートフォン内蔵のカメラと同時撮影ができます。
 
 ------------------------------
@@ -62,7 +62,7 @@ AirA01cは、[OLYMPUS（現OMデジタルソリューションズ）社](https:/
 
 ### [A01d : OlympusAir用撮影アプリケーション(OlympusAirを望遠鏡として使ってみよう版)](Applications/A01d/Readme.md)
 
-[Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit")を使用してOlympus Airのライブビューの拡大機能を使って遠くのモノを見るためのAndroidアプリケーションです。
+[Olympus Camera Kit](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip "Olympus Camera Kit")を使用してOlympus Airのライブビューの拡大機能を使って遠くのモノを見るためのAndroidアプリケーションです。
 Olympus Air だけでなく、いろいろなカメラの撮影制御が可能となりました。
 
 ------------------------------
@@ -127,7 +127,8 @@ Android アプリケーション、Wear OSアプリケーションがありま�
 
 ### [A01c : OlympusAir / RICOH THETA用撮影アプリケーション](Applications/A01c/Readme.md)
 
-[Olympus Camera Kit](https://opc.olympus-imaging.com/sdkdocs/ "Olympus Camera Kit")を使用したWear OS用アプリケーションです。
+[Olympus Camera Kit](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip "Olympus Camera Kit")を使用したWear OS用撮影アプリケーションです。
+Wi-Fi経由で接続する OLYMPUS AIR A01 と RICOH THETAシリーズに対応しています。
 
 ------------------------------
 
