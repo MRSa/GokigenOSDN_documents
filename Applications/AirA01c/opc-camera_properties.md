@@ -4,6 +4,7 @@
   - [基本](#基本)
   - [アートフィルター関連](#アートフィルター関連)
   - [仕上がり・ピクチャーモード関連](#仕上がりピクチャーモード関連)
+  - [ホワイトバランス](#ホワイトバランス)
 
 ----
 
@@ -51,8 +52,8 @@
 
 ## アートフィルター関連
 
-OLYMPUS AIR A01のアートフィルター関連の設定は、[OLYMPUS PEN E-PL8](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) と同等のようです。
-[E-PL8の取扱説明書](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) も参照してください。
+OLYMPUS AIR A01のアートフィルター関連の設定は、[OLYMPUS PEN E-PL8](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) や [OLYMPUS PEN-F](https://download.omsystem.com/pages/inst/penf/manual_penf_JPN.pdf) と同等のようです。
+[E-PL8の取扱説明書](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) や [OLYMPUS PEN-F](https://download.omsystem.com/pages/inst/penf/manual_penf_JPN.pdf) も参照してください。
 
 | 分類 | 項目 | プロパティ値 | 補足 | Wi-Fi | BLE | iAuto | P | A | S | M | ART | movieP | movieA | movieS | movieM | 備考 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
@@ -102,8 +103,8 @@ OLYMPUS AIR A01のアートフィルター関連の設定は、[OLYMPUS PEN E-PL
 
 ## 仕上がり・ピクチャーモード関連
 
-OLYMPUS AIR A01のピクチャーモード関連の設定も、[OLYMPUS PEN E-PL8](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) と同等のようです。
-アートフィルター同様、[E-PL8の取扱説明書](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) も合わせて参照してください。
+OLYMPUS AIR A01のピクチャーモード関連の設定も、[OLYMPUS PEN E-PL8](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) や [OLYMPUS PEN-F](https://download.omsystem.com/pages/inst/penf/manual_penf_JPN.pdf) と同等のようです。
+アートフィルター同様、[E-PL8の取扱説明書](https://download.omsystem.com/pages/inst/epl8/manual_epl8_JPN.pdf) や [OLYMPUS PEN-F](https://download.omsystem.com/pages/inst/penf/manual_penf_JPN.pdf) も合わせて参照してください。
 
 | 分類 | 項目 | プロパティ値 | 補足 | Wi-Fi | BLE | iAuto | P | A | S | M | ART | movieP | movieA | movieS | movieM | 備考 |
 | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
@@ -143,3 +144,29 @@ OLYMPUS AIR A01のピクチャーモード関連の設定も、[OLYMPUS PEN E-PL
 | ^ | 調色効果 (アートフィルター: ドラマチックトーン) | MONOTONECOLOR_DRAMATIC_TONE | NORMAL, LIKE_SEPIA, LIKE_BLUE, LIKE_PURPLE, LIKE_GREEN | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
 | ^ | カラークリエーター用　色相 | COLOR_CREATOR_COLOR | 0 ～ 29 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
 | ^ | カラークリエーター用　彩度 | COLOR_CREATOR_VIVID | -4 ～ +3 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+
+----
+
+## ホワイトバランス
+
+| 分類 | 項目 | プロパティ値 | 補足 | Wi-Fi | BLE | iAuto | P | A | S | M | ART | movieP | movieA | movieS | movieM | 備考 |
+| :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
+| ホワイトバランス | ホワイトバランス | WB | WB_AUTO, MWB_FINE, MWB_SHADE, MWB_CLOUD, MWB_LAMP, MWB_FLUORESCENCE1, MWB_WATER_1, WB_CUSTOM1 | RW | RW | - | OK | OK | OK | OK | OK | OK | OK | OK | OK | - |
+| ^ | カスタムホワイトバランス色温度 | CUSTOM_WB_KELVIN_1 | 2000K ～ 14000K | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正A-電球) | WB_REV_3000K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正A-蛍光灯) | WB_REV_4000K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正A-晴天) | WB_REV_5300K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正A-曇天) | WB_REV_6000K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正A-日陰) | WB_REV_7500K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正A-Auto) | WB_REV_AUTO | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正A-水中) | WB_REV_AUTO_UNDER_WATER | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正G-電球) | WB_REV_G_3000K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正G-蛍光灯) | WB_REV_G_4000K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正G-晴天) | WB_REV_G_5300K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正G-曇天) | WB_REV_G_6000K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正G-日陰) | WB_REV_G_7500K | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正G-Auto) | WB_REV_G_AUTO | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | ホワイトバランス補正 (WB補正G-水中) | WB_REV_G_AUTO_UNDER_WATER | -7 ～ +7 | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+| ^ | WBオート　電球色残し | AUTO_WB_DENKYU_COLORED_LEAVING | OFF, ON | RW | RW | - | OK | OK | OK | OK | - | OK | OK | OK | OK | - |
+
+----
