@@ -460,7 +460,7 @@ SDカードの状態を示します。 通常は normal です。
 
 ##### Camera kit Version
 
-AirA01bが使用している [Olympus Camera Kit](https://opc.olympus-imaging.com/tools/sdk/) のバージョンを示します。
+AirA01bが使用している Olympus Camera Kit のバージョンを示します。
 
 ##### OpenCV Version
 
@@ -495,7 +495,7 @@ OLYMPUS AIR A01の持つカメラプロパティを一覧表示する画面で�
 カメラプロパティ画面で編集した値は、すぐにカメラに反映させるのではなく、本画面から抜けるときに一括でカメラに設定を行います。
 編集中の値を画面オープン時の状態に戻すには右上のボタンを押してください。
 
-なお、カメラプロパティの編集可否条件や意味の詳細は、[Olympus Camera Kit カメラプロパティリスト](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/opc-camera_properties.md) を参照してください。
+なお、カメラプロパティの編集可否条件や意味の詳細は、[Olympus Camera Kit カメラプロパティリスト](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01b/opc-camera_properties.md) を参照してください。
 
 ### カメラ内撮影画像一覧画面
 
@@ -564,6 +564,7 @@ OLYMPUS AIR A01 のカメラ内にある、撮影画像の一覧画面です。
 * 1.11.0 : ライブビュー画像の遅延表示ができるようになりました。
 * 1.12.4 : 撮影画像一覧画面で、画像を複数選択し、一括削除ができるようになりました。
 * 1.12.5 : SDKを最新に更新しました。
+* 1.12.6 : SDKを最新に更新しました。
 
 ## その他
 
