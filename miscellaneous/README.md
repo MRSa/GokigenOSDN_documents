@@ -8,14 +8,22 @@
 
 - **[リモート制御アプリ比較.xlsx](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E5%88%B6%E5%BE%A1%E3%82%A2%E3%83%97%E3%83%AA%E6%AF%94%E8%BC%83.xlsx)**
   - デジタルカメラとWi-Fiで接続する制御アプリおよび制御方法の比較を記載した資料です。
+
 - **[A01c_informations.pptx](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/A01c_informations.pptx)**
   - [A01c](https://github.com/MRSa/A01c)のスクリーンショットや説明の記載です。
+
 - **[A01c-チートシート.xlsx](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/A01c-%E3%83%81%E3%83%BC%E3%83%88%E3%82%B7%E3%83%BC%E3%83%88.xlsx)**
   - [A01c](https://github.com/MRSa/A01c)の操作方法を取りまとめたものです。
+
 - **[EULA_OlympusCameraKit_forDevelopers_jp.pdf](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/EULA_OlympusCameraKit_ForDevelopers_jp.pdf)**
+- **[EULA_OlympusCameraKit_forDevelopers_en.pdf](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/EULA_OlympusCameraKit_ForDevelopers_en.pdf)**
   - Olympus Camera Kit の使用許諾書です。一部のアプリケーションは、この使用許諾に基づいています。
+
 - **[Fujifilm製デジタルカメラとの通信について](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Projects/Others/FujiXCommands.md)**
   - [Fujifilm X Cameraの通信コマンド解析](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Projects/Others/FujiXCommands.md) です。
+
+- **[Olympus Air A01 を Bluetooth LE 経由で電源ONにする （備忘録）](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/opc_ble_poweron.md)**
+  - [Olympus Air A01](https://jp.omsystem.com/cms/product/opc/a01/index.html) に対して、Bluetooth LE経由で電源ONにする方法の備忘録です。
 
 --------------------------------------------------------
 
