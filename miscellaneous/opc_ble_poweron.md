@@ -50,7 +50,7 @@ AA BB CC DD EE FF は、パスコードとして設定した６文字で、ss �
 sudo gatttool -b xx:xx:xx:xx:xx:xx -I
 connect
 char-write-req 0x0012 0101090c01023132333435364400
-char-write-char-write-req 0x0012 0101040f0101021300
+char-write-req 0x0012 0101040f0101021300
 exit
 ````
 
