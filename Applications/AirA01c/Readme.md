@@ -10,6 +10,7 @@
   - [操作説明](#操作説明)
   - [画面遷移](#画面遷移)
     - [「Home」画面](#home画面)
+      - [「アプリ起動」で起動可能なアプリについて](#アプリ起動で起動可能なアプリについて)
     - [「OLYMPUS AIR設定」画面](#olympus-air設定画面)
       - [microSDカード](#microsdカード)
       - [水準器調整](#水準器調整)
@@ -38,6 +39,7 @@ AirA01cは、[OLYMPUS（現OMデジタルソリューションズ）社](https:/
 
 AirA01cは、以下の機能を持ちます。
 
+- Bluetooth LE経由での電源ON
 - カメラのモード変更
 - カメラの状態確認
 - 時刻の設定(Androidとの同期)
@@ -48,6 +50,7 @@ AirA01cは、以下の機能を持ちます。
 - スタンドアローン撮影時の設定（撮影モード、ピクチャーモード、ホワイトバランス、ISO感度等）
 - カメラの設定（操作音、スリープまでの時間、レンズリセット、RAW撮影等）
 - 操作の説明
+- AIR A01用のアプリケーション起動
 
 ### 操作概要
 
@@ -91,7 +94,7 @@ AirA01cの起動後、Home画面が開きます。Home画面で、OLYMPUS AIR A0
 『Wi-Fi設定』ボタンを押すと、Androidのネットワーク画面を開きますので、OLYMPUS AIR A01のネットワークを選択し、接続した後、『接続』ボタンで OLYMPUS AIR A01 に接続を行います。
 OLYMPUS AIR A01に接続ができると、有効なボタンが変わります。
 
-![Home 画面](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-home.png?raw=true)
+![Home 画面](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-home1.png?raw=true)
 
 以下、ボタン押下時の振る舞いを説明します。
 
@@ -101,6 +104,10 @@ OLYMPUS AIR A01に接続ができると、有効なボタンが変わります�
   - 接続時に有効です。ボタンを押すと、OLYMPUS AIR A01の電源を切り、アプリケーションを終了します。
 - **Wi-Fi設定**
   - 常時有効です。ボタンを押すと、Androidのネットワーク設定画面を開きます。OLYMPUS AIR A01のWi-Fiと接続する場合に利用してください。
+- **アプリ起動**
+  - 常時有効です。ボタンを押すと、アプリ起動ダイアログを表示します。起動したいAIR A01用アプリを選択し、 **起動** ボタンを押して、アプリを起動させてください。
+- **BLUETOOTH**
+  - 常時有効です。ボタンを押すと、BLUETOOTH LE 経由で電源を入れるためのダイアログを表示します。起動したいAIR A01を選択し、起動コードを記入して、**起動** ボタンを押して AIR A01 を起動させてください。
 - **モード初期化**
   - 接続時有効です。ボタンを押すと、OLYMPUS AIR A01のモードを初期化（standaloneモードに変更）します。
 - **時刻同期**
@@ -114,6 +121,24 @@ OLYMPUS AIR A01に接続ができると、有効なボタンが変わります�
     - 装着レンズの焦点距離、電動ズーム駆動の可否、マクロ対応レンズのマクロ状態
     - バッテリー残量
     - ボディ（OLYMPUS AIR A01）および装着レンズのファームウェアバージョン
+
+#### 「アプリ起動」で起動可能なアプリについて
+
+**アプリ起動** ダイアログから起動できるアプリケーションの一覧を以下に示します。
+
+- [AirA01b](https://play.google.com/store/apps/details?id=jp.osdn.gokigen.aira01b)
+- [AirA01a](https://play.google.com/store/apps/details?id=jp.osdn.gokigen.aira01a)
+- [A01GR2](https://play.google.com/store/apps/details?id=net.osdn.gokigen.gr2control)
+- [A01e](https://play.google.com/store/apps/details?id=jp.osdn.gokigen.mangle)
+- [A01DL](https://play.google.com/store/apps/details?id=net.osdn.gokigen.pkremote)
+- [A01d](https://play.google.com/store/apps/details?id=net.osdn.gokigen.a01d)
+- [OA.ModeDial / YouTube](https://www.youtube.com/watch?v=OGz6UOUWDpA)
+- [OA.Viewer / YouTube](https://www.youtube.com/watch?v=IQ9le3FOaNo)
+- [OA.ArtFilter / YouTube](https://www.youtube.com/watch?v=9lw7XDN00go)
+- [OA.Central / YouTube](https://www.youtube.com/watch?v=eL8h0PKI4QY)
+- OA.ColorCreator
+
+![アプリ起動ダイアログ](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-launch.png?raw=true)
 
 -----
 
