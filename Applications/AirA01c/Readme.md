@@ -10,7 +10,8 @@
   - [操作説明](#操作説明)
   - [画面遷移](#画面遷移)
     - [「Home」画面](#home画面)
-      - [「アプリ起動」で起動可能なアプリについて](#アプリ起動で起動可能なアプリについて)
+      - [「アプリ起動」ダイアログで起動可能なアプリについて](#アプリ起動ダイアログで起動可能なアプリについて)
+      - [「BLUETOOTH」起動ダイアログ](#bluetooth起動ダイアログ)
     - [「OLYMPUS AIR設定」画面](#olympus-air設定画面)
       - [microSDカード](#microsdカード)
       - [水準器調整](#水準器調整)
@@ -23,6 +24,7 @@
   - [その他情報](#その他情報)
     - [permissionについて](#permissionについて)
     - [制御対象カメラ(OLYMPUS AIR A01)についての情報](#制御対象カメラolympus-air-a01についての情報)
+      - [OLYMPUS AIR A01のBLUETOOTH LE操作情報](#olympus-air-a01のbluetooth-le操作情報)
     - [ソースコード](#ソースコード)
 
 -----
@@ -122,7 +124,9 @@ OLYMPUS AIR A01に接続ができると、有効なボタンが変わります�
     - バッテリー残量
     - ボディ（OLYMPUS AIR A01）および装着レンズのファームウェアバージョン
 
-#### 「アプリ起動」で起動可能なアプリについて
+#### 「アプリ起動」ダイアログで起動可能なアプリについて
+
+![アプリ起動ダイアログ](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-launch.png?raw=true)
 
 **アプリ起動** ダイアログから起動できるアプリケーションの一覧を以下に示します。
 
@@ -138,7 +142,9 @@ OLYMPUS AIR A01に接続ができると、有効なボタンが変わります�
 - [OA.Central / YouTube](https://www.youtube.com/watch?v=eL8h0PKI4QY)
 - OA.ColorCreator
 
-![アプリ起動ダイアログ](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-launch.png?raw=true)
+#### 「BLUETOOTH」起動ダイアログ
+
+![BLUETOOTHダイアログ](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01c/images/AirA01c-ble.png?raw=true)
 
 -----
 
@@ -298,6 +304,10 @@ AirA01c は、次のパーミッションを指定し使用しています。
 - [AIR A01 Instruction Manual(英語)](https://learnandsupport.getolympus.com/sites/default/files/media/files/2018/03/AIR_A01_MANUAL.pdf)
 - [OlympusCameraKit(英語, Wayback Machine経由)](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip)
 - [OPC Communication Protocol(英語, Wayback Machine経由)](https://web.archive.org/web/20210325165614/https://dl-support.olympus-imaging.com/opc/files/en/OPC_Communication_Protocol_EN.zip)
+
+#### OLYMPUS AIR A01のBLUETOOTH LE操作情報
+
+- [Olympus Air A01 を Bluetooth LE 経由で電源ONにする （備忘録）](https://github.com/MRSa/GokigenOSDN_documents/blob/main/miscellaneous/opc_ble_poweron.md)
 
 ### ソースコード
 
