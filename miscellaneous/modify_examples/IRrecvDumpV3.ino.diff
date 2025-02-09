@@ -1,0 +1,102 @@
+--- IRrecvDumpV3.ino	Thu Feb  6 23:11:03 2025
++++ IRrecvDumpV3mod.ino	Sun Feb  9 22:45:54 2025
+@@ -1,5 +1,6 @@
++// ----- MRSa : Modified to show analysis results on OLED display(SSD1306, Adafruit_SSD1306).
+ /*
+  * IRremoteESP8266: IRrecvDumpV3 - dump details of IR codes with IRrecv
+  * An IR detector/demodulator must be connected to the input kRecvPin.
+  *
+  * Copyright 2009 Ken Shirriff, http://arcfn.com
+@@ -127,10 +128,25 @@
+ //
+ // Change to `true` if you miss/need the old "Raw Timing[]" display.
+ #define LEGACY_TIMING_INFO false
+ // ==================== end of TUNEABLE PARAMETERS ====================
+ 
++
++// ===== for SSD1306 (OLED SCREEN) {
++#include <SPI.h>
++#include <Wire.h>
++#include <Adafruit_GFX.h>
++#include <Adafruit_SSD1306.h>
++
++#define SCREEN_WIDTH 128 // OLED display width, in pixels
++#define SCREEN_HEIGHT 32 // OLED display height, in pixels
++
++#define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
++#define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
++Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
++// } =====
++
+ // Use turn on the save buffer feature for more complete capture coverage.
+ IRrecv irrecv(kRecvPin, kCaptureBufferSize, kTimeout, true);
+ decode_results results;  // Somewhere to store the results
+ 
+ // This section of code runs only once at start-up.
+@@ -151,10 +167,28 @@
+   OTAinit();  // setup OTA handlers and show IP
+ #if DECODE_HASH
+   // Ignore messages with less than minimum on or off pulses.
+   irrecv.setUnknownThreshold(kMinUnknownSize);
+ #endif  // DECODE_HASH
++
++// ===== for SSD1306 (OLED SCREEN) {
++  if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS))
++  {
++    Serial.println(F("SSD1306 allocation failed"));
++    delay(50);
++    for(;;); // Don't proceed, loop forever
++  }
++  else
++  {
++    Serial.println(F("SSD1306 READY TO DISPLAY"));    
++  }
++  // Show the display buffer on the screen. You MUST call display() after
++  // drawing commands to make them visible on screen!
++  display.display();
++  delay(2000);
++// } =====
++
+   irrecv.setTolerance(kTolerancePercentage);  // Override the default tolerance.
+   irrecv.enableIRIn();  // Start the receiver
+ }
+ 
+ // The repeating section of the code
+@@ -172,10 +206,16 @@
+     // Display the tolerance percentage if it has been change from the default.
+     if (kTolerancePercentage != kTolerance)
+       Serial.printf(D_STR_TOLERANCE " : %d%%\n", kTolerancePercentage);
+     // Display the basic output of what we found.
+     Serial.print(resultToHumanReadableBasic(&results));
++
++// ===== for SSD1306 (OLED SCREEN) {
++    char *message = (char *) resultToHumanReadableBasic(&results).c_str();
++    drawMessage(message);
++// } =====
++
+     // Display any extra A/C info if we have it.
+     String description = IRAcUtils::resultAcToString(&results);
+     if (description.length()) Serial.println(D_STR_MESGDESC ": " + description);
+     yield();  // Feed the WDT as the text output can take a while to print.
+ #if LEGACY_TIMING_INFO
+@@ -188,5 +228,20 @@
+     Serial.println();    // Blank line between entries
+     yield();             // Feed the WDT (again)
+   }
+   OTAloopHandler();
+ }
++
++// ===== for SSD1306 (OLED SCREEN) {
++void drawMessage(char *messageToShow)
++{
++  display.clearDisplay();
++  display.setTextSize(1);      // Normal 1:1 pixel scale
++  display.setTextColor(SSD1306_WHITE); // Draw white text
++  display.setCursor(0, 0);     // Start at top-left corner
++  display.cp437(true);         // Use full 256 char 'Code Page 437' font
++  display.setCursor(0,0);      // Start at top-left corner
++  display.println(F(messageToShow));
++  display.display();
++  delay(100);
++}
++// } =====
