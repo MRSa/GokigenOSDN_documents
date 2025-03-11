@@ -1,6 +1,14 @@
 #include "esp_camera.h"
 #include <WiFi.h>
 
+//  Modified 'ESP32 CameraWebServer' example for the Unit CAM. : https://docs.m5stack.com/en/unit/unit_cam
+//  ( https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Camera/CameraWebServer )
+// -----------------------------------------------------------
+//   Board: M5UnitCAM
+//   Partition Scheme : Huge APP (3MB No OTA/1MB SPIFFS)
+//   PSRAM : Disabled
+// -----------------------------------------------------------
+
 //
 // WARNING!!! PSRAM IC required for UXGA resolution and high JPEG quality
 //            Ensure ESP32 Wrover Module or other board with PSRAM is selected
@@ -14,13 +22,13 @@
 // Select camera model
 // ===================
 //#define CAMERA_MODEL_WROVER_KIT // Has PSRAM
-#define CAMERA_MODEL_ESP_EYE // Has PSRAM
+//#define CAMERA_MODEL_ESP_EYE // Has PSRAM
 //#define CAMERA_MODEL_ESP32S3_EYE // Has PSRAM
 //#define CAMERA_MODEL_M5STACK_PSRAM // Has PSRAM
 //#define CAMERA_MODEL_M5STACK_V2_PSRAM // M5Camera version B Has PSRAM
 //#define CAMERA_MODEL_M5STACK_WIDE // Has PSRAM
 //#define CAMERA_MODEL_M5STACK_ESP32CAM // No PSRAM
-//#define CAMERA_MODEL_M5STACK_UNITCAM // No PSRAM
+#define CAMERA_MODEL_M5STACK_UNITCAM // No PSRAM
 //#define CAMERA_MODEL_AI_THINKER // Has PSRAM
 //#define CAMERA_MODEL_TTGO_T_JOURNAL // No PSRAM
 //#define CAMERA_MODEL_XIAO_ESP32S3 // Has PSRAM
@@ -38,6 +46,8 @@
 #include "wifi_creds.h"
 // const char* ssid = "**********";      // defined in wifi_creds.h
 // const char* password = "**********";  // defined in wifi_creds.h
+
+#define LED_GPIO_NUM       4  // NORMAL LED (Unit CAM)
 
 void startCameraServer();
 void setupLedFlash(int pin);
@@ -66,13 +76,17 @@ void setup() {
   config.pin_sccb_scl = SIOC_GPIO_NUM;
   config.pin_pwdn = PWDN_GPIO_NUM;
   config.pin_reset = RESET_GPIO_NUM;
-  config.xclk_freq_hz = 20000000;
-  config.frame_size = FRAMESIZE_UXGA;
+  //config.xclk_freq_hz = 20000000;
+  config.xclk_freq_hz = 8000000;
+  //config.frame_size = FRAMESIZE_UXGA;
+  config.frame_size = FRAMESIZE_SVGA;
   config.pixel_format = PIXFORMAT_JPEG; // for streaming
   //config.pixel_format = PIXFORMAT_RGB565; // for face detection/recognition
   config.grab_mode = CAMERA_GRAB_WHEN_EMPTY;
-  config.fb_location = CAMERA_FB_IN_PSRAM;
-  config.jpeg_quality = 12;
+  //config.fb_location = CAMERA_FB_IN_PSRAM;
+  config.fb_location = CAMERA_FB_IN_DRAM;
+  //config.jpeg_quality = 12;
+  config.jpeg_quality = 4;
   config.fb_count = 1;
   
   // if PSRAM IC present, init with UXGA resolution and higher JPEG quality
@@ -114,10 +128,23 @@ void setup() {
     s->set_brightness(s, 1); // up the brightness just a bit
     s->set_saturation(s, -2); // lower the saturation
   }
+#if defined(CAMERA_MODEL_M5STACK_UNITCAM)
+  s->set_framesize(s, FRAMESIZE_SVGA);
+
+  int xclk = config.xclk_freq_hz;
+  s->set_xclk(s, LEDC_TIMER_0, xclk);
+  s->set_quality(s, 4);
+  s->set_reg(s, 0x111, 0x80, 0x80);
+  s->set_hmirror(s, 1);
+  s->set_vflip(s, 1);
+
+  Serial.println("");
+#else
   // drop down frame size for higher initial frame rate
   if(config.pixel_format == PIXFORMAT_JPEG){
     s->set_framesize(s, FRAMESIZE_QVGA);
   }
+#endif
 
 #if defined(CAMERA_MODEL_M5STACK_WIDE) || defined(CAMERA_MODEL_M5STACK_ESP32CAM)
   s->set_vflip(s, 1);
@@ -132,6 +159,8 @@ void setup() {
 #if defined(LED_GPIO_NUM)
   setupLedFlash(LED_GPIO_NUM);
 #endif
+
+  Serial.println("");
 
   WiFi.begin(ssid, password);
   WiFi.setSleep(false);

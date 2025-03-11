@@ -358,6 +358,18 @@ static esp_err_t capture_handler(httpd_req_t *req)
     int64_t fr_start = esp_timer_get_time();
 #endif
 
+////////////////////////////////////////////////////
+fb = esp_camera_fb_get();
+if (!fb)
+{
+    log_e("Camera capture failed");
+    httpd_resp_send_500(req);
+    return ESP_FAIL;
+}
+esp_camera_fb_return(fb);
+vTaskDelay(200 / portTICK_PERIOD_MS);
+////////////////////////////////////////////////////
+
 #if CONFIG_LED_ILLUMINATOR_ENABLED
     enable_led(true);
     vTaskDelay(150 / portTICK_PERIOD_MS); // The LED needs to be turned on ~150ms before the call to esp_camera_fb_get()
