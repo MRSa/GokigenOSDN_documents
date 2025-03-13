@@ -180,7 +180,7 @@ void setup() {
 
     const char standalone_ssid[] = "M5UnitCAM";
     const char pass[] = "M5U109";
-    const IPAddress ip(192,168,20,21);
+    const IPAddress ip(192,168,20,1);
     const IPAddress subnet(255,255,255,0);
     WiFi.softAP(standalone_ssid,pass);
     delay(100);
@@ -188,19 +188,45 @@ void setup() {
     IPAddress myIP = WiFi.softAPIP();
     delay(100);
     Serial.println("");
-    Serial.println("Start WiFi Standalone");
+    Serial.println("Start WiFi Standalone : 192.168.20.1");
   }
   else
   {
     WiFi.begin(wifi_ssid.c_str(), wifi_key.c_str());
     WiFi.setSleep(false);
+
+    int connectDelay = 0;
   
     while (WiFi.status() != WL_CONNECTED) {
       delay(500);
       Serial.print(".");
+      connectDelay++;
+      if (connectDelay > 60)
+      {
+        Serial.println("Connection Time out ... Change SoftAP Mode.");
+        WiFi.disconnect();
+        delay(500);
+        WiFi.mode(WIFI_MODE_AP);
+
+        const char standalone_ssid[] = "M5UnitCAM";
+        const char pass[] = "M5U109";
+        const IPAddress ip(192,168,20,1);
+        const IPAddress subnet(255,255,255,0);
+        WiFi.softAP(standalone_ssid,pass);
+        delay(100);
+        WiFi.softAPConfig(ip,ip,subnet);
+        IPAddress myIP = WiFi.softAPIP();
+        delay(100);
+        Serial.println("");
+        Serial.println("Start WiFi Standalone : 192.168.20.1");
+        break;
+      }
     }
     Serial.println("");
-    Serial.println("WiFi connected");
+    if (WiFi.status() == WL_CONNECTED)
+    {
+      Serial.println("WiFi connected");
+    }
   }
 
   startCameraServer();
