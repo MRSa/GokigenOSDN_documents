@@ -11,6 +11,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+#include "ESP.h"
 #include "esp_http_server.h"
 #include "esp_timer.h"
 #include "esp_camera.h"
@@ -19,6 +20,7 @@
 #include "esp32-hal-ledc.h"
 #include "sdkconfig.h"
 #include "camera_index.h"
+#include "Preferences.h"
 
 #if defined(ARDUINO_ARCH_ESP32) && defined(CONFIG_ARDUHAL_ESP_LOG)
 #include "esp32-hal-log.h"
@@ -1162,6 +1164,104 @@ static esp_err_t pll_handler(httpd_req_t *req)
     return httpd_resp_send(req, NULL, 0);
 }
 
+static esp_err_t restart_handler(httpd_req_t *req)
+{
+    static char json_response[1024];
+    char *p = json_response;
+    *p++ = '{';
+    p += sprintf(p, "\"result\":\"OK\"");
+    *p++ = '}';
+    *p++ = 0;
+    httpd_resp_set_type(req, "application/json");
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    esp_err_t resp = httpd_resp_send(req, json_response, strlen(json_response));
+
+    log_i("\nRestart the ESP device!\n\n");
+    ESP.restart();
+
+    return (resp);
+}
+
+static esp_err_t chkwifi_handler(httpd_req_t *req)
+{
+    static char json_response[1024];
+
+    Preferences preferences;
+    preferences.begin("wifi_keys");
+    String ssid = preferences.getString("ssid");
+    String key = preferences.getString("key");
+    preferences.end();
+
+    char *p = json_response;
+    *p++ = '{';
+    p += sprintf(p, "\"result\":\"OK\",");
+    p += sprintf(p, "\"id\":\"%s\",", ssid.c_str());
+    p += sprintf(p, "\"key\":\"%s\"", key.c_str());
+    *p++ = '}';
+    *p++ = 0;
+    httpd_resp_set_type(req, "application/json");
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    esp_err_t resp = httpd_resp_send(req, json_response, strlen(json_response));
+    return (resp);
+}
+
+static esp_err_t setwifi_handler(httpd_req_t *req)
+{
+    static char json_response[1024];
+
+    char *buf = NULL;
+    char wifi_ssid[48];
+    char wifi_key[48];
+
+    if (parse_get(req, &buf) != ESP_OK) {
+        return ESP_FAIL;
+    }
+    if (httpd_query_key_value(buf, "id", wifi_ssid, sizeof(wifi_ssid)) != ESP_OK ||
+        httpd_query_key_value(buf, "key", wifi_key, sizeof(wifi_key)) != ESP_OK) {
+        free(buf);
+        httpd_resp_send_404(req);
+        return ESP_FAIL;
+    }
+    free(buf);
+
+    Preferences preferences;
+    preferences.begin("wifi_keys");
+    preferences.putString("ssid", String(wifi_ssid));
+    preferences.putString("key", String(wifi_key));
+    preferences.end();
+
+    char *p = json_response;
+    *p++ = '{';
+    p += sprintf(p, "\"result\":\"OK\"");
+    *p++ = '}';
+    *p++ = 0;
+    httpd_resp_set_type(req, "application/json");
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    return (httpd_resp_send(req, json_response, strlen(json_response)));
+}
+
+static esp_err_t clearwifi_handler(httpd_req_t *req)
+{
+    static char json_response[1024];
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+
+    Preferences preferences;
+    preferences.begin("wifi_keys");
+    preferences.putString("ssid", String(""));
+    preferences.putString("key", String(""));
+    preferences.end();
+
+    char *p = json_response;
+    *p++ = '{';
+    p += sprintf(p, "\"result\":\"OK\"");
+    *p++ = '}';
+    *p++ = 0;
+    httpd_resp_set_type(req, "application/json");
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    esp_err_t resp = httpd_resp_send(req, json_response, strlen(json_response));
+    return (resp);
+}
+
 static esp_err_t win_handler(httpd_req_t *req)
 {
     char *buf = NULL;
@@ -1362,6 +1462,58 @@ void startCameraServer()
 #endif
     };
 
+    httpd_uri_t restart_uri = {
+        .uri = "/restart",
+        .method = HTTP_GET,
+        .handler = restart_handler,
+        .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+        ,
+        .is_websocket = true,
+        .handle_ws_control_frames = false,
+        .supported_subprotocol = NULL
+#endif
+    };
+
+    httpd_uri_t chkwifi_uri = {
+        .uri = "/chkwifi",
+        .method = HTTP_GET,
+        .handler = chkwifi_handler,
+        .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+        ,
+        .is_websocket = true,
+        .handle_ws_control_frames = false,
+        .supported_subprotocol = NULL
+#endif
+    };
+
+    httpd_uri_t setwifi_uri = {
+        .uri = "/setwifi",
+        .method = HTTP_GET,
+        .handler = setwifi_handler,
+        .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+        ,
+        .is_websocket = true,
+        .handle_ws_control_frames = false,
+        .supported_subprotocol = NULL
+#endif
+    };
+
+    httpd_uri_t clearwifi_uri = {
+        .uri = "/clearwifi",
+        .method = HTTP_GET,
+        .handler = clearwifi_handler,
+        .user_ctx = NULL
+#ifdef CONFIG_HTTPD_WS_SUPPORT
+        ,
+        .is_websocket = true,
+        .handle_ws_control_frames = false,
+        .supported_subprotocol = NULL
+#endif
+    };
+
     ra_filter_init(&ra_filter, 20);
 
 #if CONFIG_ESP_FACE_RECOGNITION_ENABLED
@@ -1384,6 +1536,10 @@ void startCameraServer()
         httpd_register_uri_handler(camera_httpd, &greg_uri);
         httpd_register_uri_handler(camera_httpd, &pll_uri);
         httpd_register_uri_handler(camera_httpd, &win_uri);
+        httpd_register_uri_handler(camera_httpd, &restart_uri);
+        httpd_register_uri_handler(camera_httpd, &chkwifi_uri);
+        httpd_register_uri_handler(camera_httpd, &setwifi_uri);
+        httpd_register_uri_handler(camera_httpd, &clearwifi_uri);
     }
 
     config.server_port += 1;

@@ -43,6 +43,7 @@
 // ===========================
 // Enter your WiFi credentials
 // ===========================
+#include "Preferences.h"
 #include "wifi_creds.h"
 // const char* ssid = "**********";      // defined in wifi_creds.h
 // const char* password = "**********";  // defined in wifi_creds.h
@@ -162,15 +163,45 @@ void setup() {
 
   Serial.println("");
 
-  WiFi.begin(ssid, password);
-  WiFi.setSleep(false);
+  Preferences preferences;
+  preferences.begin("wifi_keys");
+  String wifi_ssid = preferences.getString("ssid");
+  String wifi_key = preferences.getString("key");
+  preferences.end();
 
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
+  Serial.print("Pref. SSID: ");
+  Serial.println(wifi_ssid.c_str());
+  Serial.print("Pref. KEY : ");
+  Serial.println(wifi_key.c_str());
+  if ((strlen(wifi_ssid.c_str()) <= 0)||(strlen(wifi_ssid.c_str()) <= 0))
+  {
+    Serial.println("");
+    Serial.println(" Wi-Fi Key is not Registered... Run SoftAP Mode.");
+
+    const char standalone_ssid[] = "M5UnitCAM";
+    const char pass[] = "M5U109";
+    const IPAddress ip(192,168,20,21);
+    const IPAddress subnet(255,255,255,0);
+    WiFi.softAP(standalone_ssid,pass);
+    delay(100);
+    WiFi.softAPConfig(ip,ip,subnet);
+    IPAddress myIP = WiFi.softAPIP();
+    delay(100);
+    Serial.println("");
+    Serial.println("Start WiFi Standalone");
   }
-  Serial.println("");
-  Serial.println("WiFi connected");
+  else
+  {
+    WiFi.begin(wifi_ssid.c_str(), wifi_key.c_str());
+    WiFi.setSleep(false);
+  
+    while (WiFi.status() != WL_CONNECTED) {
+      delay(500);
+      Serial.print(".");
+    }
+    Serial.println("");
+    Serial.println("WiFi connected");
+  }
 
   startCameraServer();
 
