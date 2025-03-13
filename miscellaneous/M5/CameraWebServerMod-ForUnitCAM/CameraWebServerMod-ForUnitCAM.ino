@@ -201,7 +201,7 @@ void setup() {
       delay(500);
       Serial.print(".");
       connectDelay++;
-      if (connectDelay > 60)
+      if (connectDelay > 90)
       {
         Serial.println("Connection Time out ... Change SoftAP Mode.");
         WiFi.disconnect();
