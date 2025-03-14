@@ -25,7 +25,7 @@ ESP32 Example の [CameraWebServer](https://github.com/espressif/arduino-esp32/t
 
 以降の記述は、Unit CAMの IPアドレスが初期値の 192.168.20.1 だった場合です。
 
-* [http://192.168.20.1/setwifi?id=WWWWW&key=XXXXXX](http://192.168.20.1/setwifi?id=[SSID]&key=[password])
+* [http://192.168.20.1/setwifi?id=WWWWW&key=XXXXXX](http://192.168.20.1/setwifi?id=WWWWW&key=XXXXXX)
   * Unit CAMのWi-Fi設定を SSID を WWWWW に、パスワードを XXXXX に設定します。
 * [http://192.168.20.1/clearwifi](http://192.168.20.1/clearwifi)
   * Unit CAMのWi-Fi設定をクリアします。設定クリア後、Unit CAMを再起動させるとアクセスポイントモードで起動します。
