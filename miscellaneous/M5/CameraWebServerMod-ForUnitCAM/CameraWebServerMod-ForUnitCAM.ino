@@ -40,18 +40,36 @@
 //#define CAMERA_MODEL_DFRobot_Romeo_ESP32S3 // Has PSRAM
 #include "camera_pins.h"
 
+#include "Preferences.h"
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-#include "Preferences.h"
-#include "wifi_creds.h"
-// const char* ssid = "**********";      // defined in wifi_creds.h
-// const char* password = "**********";  // defined in wifi_creds.h
+// const char* ssid = "**********";      // Do not need to set the SSID.
+// const char* password = "**********";  // Do not need to set the password.
 
 #define LED_GPIO_NUM       4  // NORMAL LED (Unit CAM)
 
 void startCameraServer();
 void setupLedFlash(int pin);
+
+
+void startWifiAsAccessPointMode()
+{
+    const char standalone_ssid[] = "M5UnitCAM";
+    const char pass[] = "M5U109";
+    const IPAddress ip(192,168,20,1);
+    const IPAddress subnet(255,255,255,0);
+    WiFi.softAP(standalone_ssid,pass);
+    delay(100);
+    WiFi.softAPConfig(ip,ip,subnet);
+    IPAddress myIP = WiFi.softAPIP();
+    delay(100);
+    Serial.println("");
+    Serial.print("Start WiFi Standalone : ");
+    Serial.println(myIP.toString().c_str());
+    Serial.println("");
+}
+
 
 void setup() {
   Serial.begin(115200);
@@ -178,17 +196,7 @@ void setup() {
     Serial.println("");
     Serial.println(" Wi-Fi Key is not Registered... Run SoftAP Mode.");
 
-    const char standalone_ssid[] = "M5UnitCAM";
-    const char pass[] = "M5U109";
-    const IPAddress ip(192,168,20,1);
-    const IPAddress subnet(255,255,255,0);
-    WiFi.softAP(standalone_ssid,pass);
-    delay(100);
-    WiFi.softAPConfig(ip,ip,subnet);
-    IPAddress myIP = WiFi.softAPIP();
-    delay(100);
-    Serial.println("");
-    Serial.println("Start WiFi Standalone : 192.168.20.1");
+    startWifiAsAccessPointMode();
   }
   else
   {
@@ -208,17 +216,7 @@ void setup() {
         delay(500);
         WiFi.mode(WIFI_MODE_AP);
 
-        const char standalone_ssid[] = "M5UnitCAM";
-        const char pass[] = "M5U109";
-        const IPAddress ip(192,168,20,1);
-        const IPAddress subnet(255,255,255,0);
-        WiFi.softAP(standalone_ssid,pass);
-        delay(100);
-        WiFi.softAPConfig(ip,ip,subnet);
-        IPAddress myIP = WiFi.softAPIP();
-        delay(100);
-        Serial.println("");
-        Serial.println("Start WiFi Standalone : 192.168.20.1");
+        startWifiAsAccessPointMode();
         break;
       }
     }
