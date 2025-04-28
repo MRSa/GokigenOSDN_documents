@@ -4,6 +4,8 @@
 
 ## ASR Command List
 
+No.21 以降は、No.20のウェイクワードの後に続けて発声する必要があります。
+
 ![ASR Command List](ASR_commands.png)
 
 ## ファームウェア生成サイト
