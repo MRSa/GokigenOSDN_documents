@@ -194,6 +194,9 @@ void loop()
     Disbuff.setCursor(5, 35);
     Disbuff.printf("ir:%d,%d,%d", ir_max, ir_min, ir_max - ir_min);
 
+
+
+
     Disbuff.pushSprite(0, 0);
 
     delay(10);
@@ -289,7 +292,39 @@ void printHRandSPO2(bool beat)
   M5.Lcd.println("- MAX30100 -");
   M5.Lcd.setCursor(0,45);
   M5.Lcd.print("HR:   "); M5.Lcd.println(Heart_rate);
-  M5.Lcd.print("SPO2: "); M5.Lcd.println(Spo2); 
+  M5.Lcd.print("SPO2: "); M5.Lcd.println(Spo2);
+
+  printBatteryRemain();
+}
+
+void printBatteryRemain()
+{
+    try
+    {
+        uint8_t low_batt = M5.Axp.GetWarningLevel();
+        float vbatt = M5.Axp.GetBatVoltage();
+        char batteryStr[64];
+        sprintf(batteryStr, "Batt. %1.2fV ", vbatt);
+        
+        M5.Lcd.setTextSize(2);
+        M5.Lcd.setCursor(2,105);
+        M5.Lcd.print(batteryStr);
+        if (low_batt)
+        {
+            M5.Lcd.setTextColor(ORANGE);
+            M5.Lcd.println("WARNING");
+        }
+        else
+        {
+            M5.Lcd.setTextColor(RED);
+            M5.Lcd.println("");    
+        }
+        M5.Lcd.setTextColor(WHITE); 
+    }
+    catch (...)
+    {
+
+    }
 }
 
 /*************************/
