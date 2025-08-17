@@ -1,7 +1,7 @@
 
 # プライバシーポリシー
 
-[GOKIGENプロジェクト](https://osdn.net/projects/gokigen)（以下「当プロジェクト」とします。）は、提供するアプリケーション（以下「アプリケーション」とします。）におけるプライバシー情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」とします。）を定めます。
+[GOKIGENプロジェクト](https://github.com/MRSa/gokigen)（以下「当プロジェクト」とします。）は、提供するアプリケーション（以下「アプリケーション」とします。）におけるプライバシー情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」とします。）を定めます。
 
 ## 第１条（プライバシー情報）
 
@@ -32,10 +32,10 @@
 
 本ポリシーに関するお問い合わせは、下記に連絡をお願いします。
 
-* GOKIGENプロジェクト  [mrsa](https://osdn.net/users/mrsa/)
+* GOKIGENプロジェクト/GitHub  [MRSa](https://github.com/MRSa)
 
 以上
 
 ----------
 
-[Google Translate for this page](https://translate.google.com/translate?sl=ja&tl=en&u=https://osdn.net/projects/gokigen/wiki/PrivacyPolicy "Privacy Policy(English)")
+[Google Translate for this page](https://raw-githubusercontent-com.translate.goog/MRSa/GokigenOSDN_documents/refs/heads/main/PrivacyPolicy.md?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp "Privacy Policy(English)")
