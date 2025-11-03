@@ -1,0 +1,37 @@
+
+CREATE DATABASE my_picture_db
+    WITH 
+    ENCODING = 'UTF8'
+    TEMPLATE = template0;
+
+CREATE TABLE file_exif_info (
+    id SERIAL PRIMARY KEY,
+    
+    -- ファイル基本情報
+    file_name VARCHAR(255) NOT NULL,         -- ファイル名
+    file_extension VARCHAR(8) NOT NULL,      -- ファイル拡張子
+    full_path TEXT UNIQUE NOT NULL,          -- ファイルパス（フルパス）
+    file_size BIGINT NOT NULL,               -- ファイルサイズ（バイト）
+    file_created TIMESTAMP WITH TIME ZONE NOT NULL,   -- ファイル作成日時
+    
+    -- EXIF文字列情報
+    exif_make VARCHAR(64),                   -- EXIF : Make
+    exif_model VARCHAR(128),                 -- EXIF : Model
+    exif_software VARCHAR(128),              -- EXIF : Software
+    exif_date_time TIMESTAMP WITH TIME ZONE, -- EXIF : DateTime
+    
+    -- EXIF数値情報 (計算可能な形式で格納)
+    exif_iso INTEGER,                        -- EXIF : ISOSpeedRatings
+    exif_shutter DOUBLE PRECISION,           -- EXIF : ShutterSpeedValue
+    exif_aperture DOUBLE PRECISION,          -- EXIF : ApertureValue
+    exif_focal_length DOUBLE PRECISION,      -- EXIF : FocalLength
+    exif_width INTEGER,                      -- EXIF : PixelXDimension
+    exif_height INTEGER,                     -- EXIF : PixelYDimension
+    
+    -- レコード管理情報
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+/* 全レコード削除 */
+/* -- TRUNCATE TABLE file_exif_info RESTART IDENTITY;  */
+/* -- DELETE FROM file_exif_info; */
