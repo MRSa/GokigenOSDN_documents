@@ -226,7 +226,8 @@ def process_directory(directory_path: str):
                 # st_ctime はファイル作成日時が取得できないOSでは最終変更日時になることに注意 (Linux, macOS)
                 creation_time = datetime.fromtimestamp(stat_info.st_ctime)
                 
-                _, file_extension = os.path.splitext(file_name)
+                _, file_extension_raw = os.path.splitext(file_name)
+                file_extension = file_extension_raw.lower()
                 
             except OSError as e:
                 sys.stderr.write(f"エラー: ファイル '{full_path}' の統計情報取得中にエラーが発生しました: {e}\n")
