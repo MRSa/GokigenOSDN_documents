@@ -101,17 +101,30 @@ def insert_to_postgres(file_info: Dict[str, Any], exif_data: Optional[Dict[str, 
     if exif_data:
         # 'date_time' の部分を最初に披露
         date_time_raw = exif_data.get('DateTime')
+
+        # 日時データは、バイト列からデコードしてタイムスタンプ型に変換
+        # 形式が不正な場合は例外が発生するため、try-exceptで捕捉
+        date_time_value = None
+        if date_time_raw and isinstance(date_time_raw, bytes):
+            try:
+                # バイト列からデコードし、終端のNULLバイトを削除して時刻文字列としてパース
+                date_time_str = date_time_raw.strip(b'\0').decode('ascii')
+                date_time_value = datetime.strptime(date_time_str, '%Y:%m:%d %H:%M:%S')
+            except (ValueError, UnicodeDecodeError) as e:
+                try:
+                    # セパレータが / のものがあったので、対応する
+                    date_time_str = date_time_raw.strip(b'\0').decode('ascii')
+                    date_time_value = datetime.strptime(date_time_str, '%Y/%m/%d %H:%M:%S')
+                except (ValueError, UnicodeDecodeError) as ee:
+                    # 形式エラーやデコードエラーの場合はNoneとする
+                    sys.stderr.write(f"警告: ファイル '{file_info['path']}' の DateTime の形式が不正です: {ee}\n")
+                    date_time_value = None
+
         exif_values = {
             'make': exif_data.get('Make'),
             'model': exif_data.get('Model'),
             'software': exif_data.get('Software'),
-            # 日時データは、バイト列からデコードしてタイムスタンプ型に変換
-            'date_time': (
-                datetime.strptime(date_time_raw.strip(b'\0').decode('ascii'), '%Y:%m:%d %H:%M:%S')
-                if date_time_raw and isinstance(date_time_raw, bytes) 
-                else None
-            ),
-
+            'date_time': date_time_value,
             'iso': exif_data.get('ISOSpeedRatings'),
             
             # Rationalを計算可能なDOUBLE PRECISIONに変換
@@ -249,5 +262,3 @@ if __name__ == '__main__':
     target_directory = sys.argv[1]
     process_directory(target_directory)
     sys.stdout.write("=" * 50 + "\n\n")
-
-
