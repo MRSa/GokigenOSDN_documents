@@ -18,3 +18,9 @@
   * 非常にシンプルなフタ付きの箱です。ちょっと大きめです。[MyBoxBigWall.stl](./MyBoxBigWall.stl)と組み合わせて使用します。 [Bambu Lab A1 mini](https://bambulab.com/ja-jp/a1-mini)で印刷できる大きさです。
 * [MyBoxBigWall.stl](./MyBoxBigWall.stl "フタ付きの箱の前板(大)")
   * [MyBoxBig.stl](./MyBoxBig.stl)と組み合わせて使用する板です。
+* [MySmallBox.stl](./MySmallBox.stl "小さいハコ")
+  * 小さいふた付きの箱です。
+* [UsbKeyCase.stl](./UsbKeyCase.stl "セキュリティキーカバー")
+  * セキュリティキー（YubiKey 5 NFC）の保護カバーです。
+* [CableClip.stl](./CableClip.stl "ケーブルクリップ")
+  * 机の上のケーブルが落ちないように、机上に留めおくようにするクリップです。
