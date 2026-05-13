@@ -4,7 +4,7 @@
 
 ## 概要
 
-AirA01b は、 [Olympus Camera Kit](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip "Olympus Camera Kit") を使用したOLYMPUS AIR用のAndroidアプリケーションです。 [オープンプラットフォームカメラ OLYMPUS AIR A01](https://jp.omsystem.com/cms/product/opc/a01/index.html) に対応しています。
+AirA01b は、 [Olympus Camera Kit](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip "Olympus Camera Kit") を使用したOLYMPUS AIR用のAndroidアプリケーションです。 [オープンプラットフォームカメラ OLYMPUS AIR A01](https://www.olympus.co.jp/jp/news/2015a/nr150205opcj.html) に対応しています。
 AirA01aとの違いは、スマートフォンのカメラと同時に撮影が可能となっていることと、縦画面レイアウトにしたところが大きく異なります。なるべく撮影のサクサク感をより高められるように努力しています。
 
 ---------
