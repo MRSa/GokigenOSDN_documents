@@ -60,6 +60,12 @@ AirA01cは、[OLYMPUS（現OMデジタルソリューションズ）社](https:/
 
 ------------------------------
 
+### [AirA01d : OLYMPUS AIR A01のリモート撮影を行うAndroidアプリケーション](Applications/AirA01d/Readme.md)
+
+AirA01dは、[OLYMPUS（現OMデジタルソリューションズ）社](https://www.olympus.co.jp/technology/museum/camera/products/digital-opf/aira-01/)製デジタルカメラ[OLYMPUS AIR A01](https://jp.omsystem.com/cms/record/dslr/a01/index.pdf)にWi-Fi経由で接続し、撮影を行うAndroid用アプリケーションです。
+
+------------------------------
+
 ### [A01d : OlympusAir用撮影アプリケーション(OlympusAirを望遠鏡として使ってみよう版)](Applications/A01d/Readme.md)
 
 [Olympus Camera Kit](https://web.archive.org/web/20210204200324/https://dl-support.olympus-imaging.com/opc/files/en/OlympusCameraKit_EN.zip "Olympus Camera Kit")を使用してOlympus Airのライブビューの拡大機能を使って遠くのモノを見るためのAndroidアプリケーションです。
