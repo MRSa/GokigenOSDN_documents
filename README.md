@@ -60,7 +60,7 @@ AirA01cは、[OLYMPUS（現OMデジタルソリューションズ）社](https:/
 
 ------------------------------
 
-### [AirA01d : OLYMPUS AIR A01のリモート撮影を行うAndroidアプリケーション](Applications/AirA01d/Readme.md)
+### [AirA01d : OLYMPUS AIR A01のリモート撮影を行うAndroidアプリケーション](Applications/AirA01d/ReadmeJa.md)
 
 AirA01dは、[OLYMPUS（現OMデジタルソリューションズ）社](https://www.olympus.co.jp/technology/museum/camera/products/digital-opf/aira-01/)製デジタルカメラ[OLYMPUS AIR A01](https://jp.omsystem.com/cms/record/dslr/a01/index.pdf)にWi-Fi経由で接続し、撮影を行うAndroid用アプリケーションです。
 
