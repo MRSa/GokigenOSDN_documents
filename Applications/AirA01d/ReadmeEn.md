@@ -56,6 +56,7 @@ Unlike [AirA01a](https://play.google.com/store/apps/details?id=jp.osdn.gokigen.a
 
 - [OLYMPUS AIR A01 (Press Release)](https://www.olympus-global.com/en/news/2015a/nr150205opce.html)
 - [AIR A01 Support Topics](https://learnandsupport.getolympus.com/support/air-a01)
+- [AIR A01 Instruction Manual](https://learnandsupport.getolympus.com/sites/default/files/media/files/2018/03/AIR_A01_MANUAL.pdf)
 
 ---
 
