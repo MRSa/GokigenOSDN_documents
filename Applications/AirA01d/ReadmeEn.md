@@ -15,7 +15,7 @@
     - [Screen Layout](#screen-layout)
     - [Camera Connection Button](#camera-connection-button)
     - [Wi-Fi Settings Button](#wi-fi-settings-button)
-    - [Camera Settings Button (Currently Unused)](#camera-settings-button-currently-unused)
+    - [Camera Property Settings Button](#camera-property-settings-button)
     - [App Settings Button](#app-settings-button)
     - [Grid Display Toggle Button](#grid-display-toggle-button)
     - [Power Off Button](#power-off-button)
@@ -30,6 +30,7 @@
     - [White Balance Button](#white-balance-button)
     - [Picture Mode Button](#picture-mode-button)
     - [Metering Mode Button](#metering-mode-button)
+  - [Camera Properties Screen](#camera-properties-screen)
   - [App Settings Screen](#app-settings-screen)
     - [Auto-Connect to Camera](#auto-connect-to-camera)
     - [Instructions](#instructions)
@@ -54,7 +55,7 @@ Unlike [AirA01a](https://play.google.com/store/apps/details?id=jp.osdn.gokigen.a
 
 ## Compatible Cameras
 
-- [OLYMPUS AIR A01 (Press Release)](https://www.olympus-global.com/en/news/2015a/nr150205opce.html)
+- [OLYMPUS AIR A01 (Olympus Press Release)](https://www.olympus-global.com/en/news/2015a/nr150205opce.html)
 - [AIR A01 Support Topics](https://learnandsupport.getolympus.com/support/air-a01)
 - [AIR A01 Instruction Manual](https://learnandsupport.getolympus.com/sites/default/files/media/files/2018/03/AIR_A01_MANUAL.pdf)
 
@@ -62,13 +63,16 @@ Unlike [AirA01a](https://play.google.com/store/apps/details?id=jp.osdn.gokigen.a
 
 ## Installation
 
-(To be added later)
+The release package is available below:
+
+- [https://play.google.com/store/apps/details?id=jp.osdn.gokigen.aira01d](https://play.google.com/store/apps/details?id=jp.osdn.gokigen.aira01d)
+- [https://github.com/MRSa/AirA01d/releases](https://github.com/MRSa/AirA01d/releases)
 
 ---
 
 ## Basic Operations
 
-![撮影画面](images/screen1.png)
+![AirA01d Screen](images/screen1.png)
 
 ### Connecting to the Camera
 
@@ -120,7 +124,7 @@ The button layout adjusts slightly between portrait and landscape orientations.
 
 - **①: Camera Connection**
 - **②: Wi-Fi Settings**
-- **③: (Currently Unused)**
+- **③: Camera Property Settings**
 - **④: App Settings**
 - **⑤: Grid Toggle**
 - **⑥: Power Off**
@@ -145,6 +149,7 @@ The button layout adjusts slightly between portrait and landscape orientations.
 - **s: Focus Mode (AF/MF)**
 - **t: AF Unlock / Center Focus**
 - **u: (Currently Unused)**
+- **v: Digital Zoom**
 - **w: Aspect Ratio**
 - **x: RAW Mode ON/OFF**
 - **y: Lens Distance / Power Zoom Control**
@@ -159,9 +164,9 @@ Connects/disconnects the camera. The icon reflects the current status.
 
 Opens the Android Wi-Fi settings. Animates when receiving a Live View stream.
 
-### Camera Settings Button (Currently Unused)
+### Camera Property Settings Button
 
-Reserved for a future "Camera Settings" screen.
+Open the screen for changing the camera settings(the “Camera Properties” screen).
 
 ### App Settings Button
 
@@ -246,6 +251,19 @@ Sets the finishing style (i-Enhance, Vivid, Natural, Muted, Portrait, Monotone, 
 
 ---
 
+## Camera Properties Screen
+
+The Camera Properties settings screen allows you to view and modify the settings (camera properties) configured on the camera.
+
+![Camera Properties Screen](images/camera_property1.png)
+
+Clicking the “Details...” button displays the available options if changes can be made. Items displayed in bold indicate the current values.
+If changes cannot be made, only the current values are displayed.
+
+![Select property value dialog](images/camera_property2.png)
+
+---
+
 ## App Settings Screen
 
 Configures app behavior. Tap "Back" to return to the shooting screen.
@@ -270,18 +288,19 @@ Displays the GOKIGEN project's [Privacy Policy(Japanese)](https://github.com/MRS
 
 ### Notes & Precautions
 
-* **Connection Stability**: Rapidly tapping buttons may overwhelm the camera's processing, leading to instability. It is recommended to wait for the camera to respond before the next action.
+- **Connection Stability**: Rapidly tapping buttons may overwhelm the camera's processing, leading to instability. It is recommended to wait for the camera to respond before the next action.
 
 ### Permissions
 
 The app requires the following permissions:
 
-* `ACCESS_NETWORK_STATE`, `ACCESS_WIFI_STATE`, `ACCESS_LOCAL_NETWORK`, `INTERNET`: For Wi-Fi communication with the Olympus Air.
-* `VIBRATE`: For haptic feedback on button presses.
+- `ACCESS_NETWORK_STATE`, `ACCESS_WIFI_STATE`, `ACCESS_LOCAL_NETWORK`, `INTERNET`: For Wi-Fi communication with the Olympus Air.
+- `VIBRATE`: For haptic feedback on button presses.
 
 ### Change Log
 
-* **1.0.0**: Initial Release
+- **1.1.0**: Add digital zoom button and Camera Properties Screen.
+- **1.0.0**: Initial Release
 
 ### Source Code
 
