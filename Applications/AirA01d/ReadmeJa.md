@@ -530,23 +530,155 @@ RAW撮影の ON/OFF を切り替えます。
 
 ![カメラプロパティの選択](images/camera_property2.png)
 
-カメラプロパティは、次のカテゴリに分かれています。
+カメラプロパティは、以下のようにカテゴリで分類しています。
 
 - 基本設定
+  - 撮影モード
+  - 動画撮影モード
+  - 測光方式
+  - ISO感度
+  - 露出補正値
+  - ドライブモード
+  - アスペクト比
+  - 絞り値
+  - シャッター速度
+  - 連写速度
+  - AEロック
 - フォーカス
+  - フォーカスモード静止画用
+  - AFロック
+  - フルタイムAF
+  - フォーカスモード動画用
 - 画質・画像
+  - ピクチャーモード
+  - アートフィルター種別
+  - ホワイトバランス
+  - 静止画サイズ
+  - RAW設定
+  - 画像圧縮率
+  - 動画画質モード
+  - クリップ記録時間
 - カメラ端末
+  - バッテリーレベル
+  - 音量レベル
+  - 位置情報付与
+  - 撮影画像保存先
+  - 撮影確認画像
+  - Wi-Fi SSID
+  - Wi-Fiチャンネル
 - 撮影補助
+  - 顔検出
+  - IS焦点距離
+  - レンズ手振れ補正優先
+  - 動画手ぶれ補正
+  - タッチAE可能範囲（左上座標）
+  - タッチAF可能範囲（右下座標）
+  - タッチAF可能範囲（左上座標）
+  - タッチAE可能範囲（右下座標）
 - ホワイトバランス
+  - カスタムWB 色温度
+  - WBオート 電球色残し
+  - WB補正 Auto (A-B)
+  - WB補正 晴天 (A-B)
+  - WB補正 日陰 (A-B)
+  - WB補正 雲天 (A-B)
+  - WB補正 電球 (A-B)
+  - WB補正蛍光灯  (A-B)
+  - WB補正 水中 (A-B)
+  - WB補正 Auto (G-M)
+  - WB補正 晴天 (G-M)
+  - WB補正 日陰 (G-M)
+  - WB補正 雲天 (G-M)
+  - WB補正 電球 (G-M)
+  - WB補正 蛍光灯 (G-M)
+  - WB補正 水中 (G-M)
 - ピクチャーモード
+  - カラークリエーター用 色相
+  - カラークリエーター用 彩度
+  - トーンコントロール (Low)
+  - トーンコントロール (Middle)
+  - トーンコントロール (High)
 - 仕上がり(コントラスト)
+  - コントラスト (i-Finish)
+  - コントラスト (Vivid)
+  - コントラスト (Natural)
+  - コントラスト (Flat)
+  - コントラスト (Portrait)
+  - コントラスト (Monochrome)
 - 仕上がり(シャープネス)
+  - シャープネス (i-Finish)
+  - シャープネス (Vivid)
+  - シャープネス (Natural)
+  - シャープネス (Flat)
+  - シャープネス (Soft)
+  - シャープネス (Monochrome)
 - 仕上がり(彩度)
+  - 彩度 (i-Finish)
+  - 彩度 (Vivid)
+  - 彩度 (Natural)
+  - 彩度 (Flat)
+  - 彩度 (Soft)
 - 仕上がり(階調)
+  - 階調 (i-Finish)
+  - 階調 (Vivid)
+  - 階調 (Natural)
+  - 階調 (Flat)
+  - 階調 (Soft)
+  - 階調 (Monochrome)
 - 仕上がり(モノクロ)
+  - モノクロフィルター (Monochrome)
+  - モノクロフィルター (Rough Monochrome)
+  - モノクロフィルター (Dramatic Tone)
+  - 調色効果 (Monochrome)
+  - 調色効果 (Rough Monochrome)
+  - 調色効果 (Dramatic Tone)
 - アートフィルター
+  - アートエフェクト (Popart)
+  - アートエフェクト (DayDream)
+  - アートエフェクト (Rough Monochrome)
+  - アートエフェクト (Toy Photo)
+  - アートエフェクト (Miniature)
+  - アートエフェクト (Cross Process)
+  - アートエフェクト (Dramatic Tone)
+  - アートエフェクト (Ligne Clair)
+  - アートエフェクト(Pastel)
+  - アートエフェクト (Vintage)
+  - アートエフェクト (Partcolor)
+  - パートカラー用 色相
 - アートフィルターブラケット
+  - ブラケット (Partcolor)
+  - ブラケット (Dramatic Tone)
+  - ブラケット (Cross Process)
+  - ブラケット (Ligne Clair)
+  - ブラケット (Gentle Sepia)
+  - ブラケット (Pastel)
+  - ブラケット (Popart)
+  - ブラケット (Fantastic Focus)
+  - ブラケット (Toy Photo)
+  - ブラケット (Miniature)
+  - ブラケット (Vintage)
+  - ブラケット (Daydream)
+  - ブラケット (Light Tone)
+  - ブラケット (Rough Monochrome)
 - アートエフェクト
+  - アートエフェクト(Popart)
+  - アートエフェクト(Fantastic Focus)
+  - アートエフェクト(Daydream)
+  - アートエフェクト(Light Tone)
+  - アートエフェクト(Rough Monochrome)
+  - アートエフェクト(Toy Photo)
+  - アートエフェクト(Miniature)
+  - アートエフェクト(Cross Process)
+  - アートエフェクト(Gentle Sepia)
+  - アートエフェクト(Dramatic Tone)
+  - アートエフェクト(Ligne Clair)
+  - アートエフェクト(Pastel)
+  - アートエフェクト(Vintage)
+  - アートエフェクト(Partcolor)
+
+カメラプロパティの詳細は、以下を参考にしてください。
+
+![AIR A01のカメラプロパティ](https://github.com/MRSa/GokigenOSDN_documents/blob/main/Applications/AirA01b/opc-camera_properties.md)
 
 -----
 
