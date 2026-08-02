@@ -79,10 +79,10 @@ void showDisplay(float temperature, float temperature2, float humidity, float pr
         M5.Display.fillRect(0, 0, 128, 128, TFT_BLACK);
 
         // --- 現在のセンサ値を表示する ---
-        int posY = 0;
         M5.Display.setCursor(0, 0);
         M5.Display.printf(" = センサ値 =\n");
 
+        int posY = 10;
         posY = posY + marginY;
         M5.Display.setCursor(0, posY);
         if (temperature > -273.0f)
@@ -162,8 +162,8 @@ void parseSensorValue()
     }
 #endif
 
-    sendSerialValue(temperature, temperature2, temperature2, pressure);
-    showDisplay(temperature, temperature2, temperature2, pressure);
+    sendSerialValue(temperature, temperature2, humidity, pressure);
+    showDisplay(temperature, temperature2, humidity, pressure);
 
 }
 
