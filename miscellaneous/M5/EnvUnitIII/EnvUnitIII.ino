@@ -26,6 +26,95 @@ float calculate_altitude(const float pressure, const float seaLvhPa = 1013.25f)
     return 44330.f * (1.0f - pow((pressure / 100.f) / seaLvhPa, 0.1903f));
 }
 
+float calculate_discomfort_index(const float humidity, const float temperature1, const float temperature2)
+{
+    float temperature = (temperature1 + temperature2) / 2.0f;
+      
+    return 0.81f * temperature + 0.01f * humidity * (0.99f * temperature - 14.3f) + 46.3f;
+}
+
+
+int getComfortColor(float discomfortIndex)
+{
+    if (discomfortIndex >= 85.0f)
+    {
+        return TFT_WHITE;      
+    }
+    else if (discomfortIndex >= 80.0f)
+    {
+        return TFT_WHITE;
+    }
+    else if (discomfortIndex >= 75.0f)
+    {
+        return TFT_WHITE;
+    }
+    else if (discomfortIndex >= 70.0f)
+    {
+        return TFT_WHITE;   
+    }
+    else if (discomfortIndex >= 65.0f)
+    {
+        return TFT_WHITE;
+    }
+    else if (discomfortIndex >= 60.0f)
+    {
+        return TFT_WHITE;
+    }
+    else if (discomfortIndex >= 55.0f)
+    {
+        return TFT_WHITE;
+    }
+    else if (discomfortIndex >= 50.0f)
+    {
+        return TFT_WHITE;
+    }
+    else
+    {
+        return TFT_WHITE;
+    }
+}
+
+
+char *getComfort(float discomfortIndex)
+{
+    if (discomfortIndex >= 85.0f)
+    {
+        return "(すごく暑い)";      
+    }
+    else if (discomfortIndex >= 80.0f)
+    {
+        return "(暑い)";      
+    }
+    else if (discomfortIndex >= 75.0f)
+    {
+        return "(やや暑い)";      
+    }
+    else if (discomfortIndex >= 70.0f)
+    {
+        return "(暑いかも)";      
+    }
+    else if (discomfortIndex >= 65.0f)
+    {
+        return "(快適)";      
+    }
+    else if (discomfortIndex >= 60.0f)
+    {
+        return "(普通)";      
+    }
+    else if (discomfortIndex >= 55.0f)
+    {
+        return "(肌寒い)";      
+    }
+    else if (discomfortIndex >= 50.0f)
+    {
+        return "(寒い)";      
+    }
+    else
+    {
+        return "(すごく寒い)";      
+    }
+}
+
 
 void setup()
 {
@@ -39,6 +128,7 @@ void setup()
     M5.Display.setFont(&fonts::lgfxJapanGothicP_16);
     M5.Display.setRotation(1);
     M5.Display.setTextSize(1);
+    M5.Display.setTextColor(TFT_LIGHTGREY, TFT_BLACK);
     M5.Display.println("初期化中");
   
 
@@ -80,9 +170,10 @@ void showDisplay(float temperature, float temperature2, float humidity, float pr
 
         // --- 現在のセンサ値を表示する ---
         M5.Display.setCursor(0, 0);
+        M5.Display.setTextColor(TFT_WHITE, TFT_BLACK);
         M5.Display.printf(" = センサ値 =\n");
 
-        int posY = 10;
+        int posY = 6;
         posY = posY + marginY;
         M5.Display.setCursor(0, posY);
         if (temperature > -273.0f)
@@ -107,6 +198,24 @@ void showDisplay(float temperature, float temperature2, float humidity, float pr
         {
             M5.Display.printf("気圧:%.1fhPa\n", pressure * 0.01f);
         }
+
+        float thi = 0.0f;
+        if ((humidity > 0.0f)&&(temperature > -273.0f))
+        {
+            thi = calculate_discomfort_index(humidity, temperature, temperature2);
+        }
+
+        if (thi > 0.0f)
+        {
+            M5.Display.setTextColor(getComfortColor(thi), TFT_BLACK);
+            posY = posY + marginY + 4;
+            M5.Display.setCursor(0, posY);
+            M5.Display.printf("不快指数:%.0f\n", thi);
+
+            posY = posY + marginY;
+            M5.Display.setCursor(0, posY);
+            M5.Display.printf("%s\n", getComfort(thi));
+        }
     }
 }
 
@@ -127,6 +236,11 @@ void sendSerialValue(float temperature, float temperature2, float humidity, floa
     if (pressure > 0.0f)
     {
         Serial.printf("気圧   : %.2f hPa\n", pressure * 0.01f);
+    }
+    if ((humidity > 0.0f)&&(temperature > -273.0f))
+    {
+        float thi = calculate_discomfort_index(humidity, temperature, temperature2);
+        Serial.printf("不快指数 : %.0f\n", thi);
     }
     Serial.println("");
 }
