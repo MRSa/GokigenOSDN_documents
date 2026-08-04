@@ -33,28 +33,85 @@ float calculate_discomfort_index(const float humidity, const float temperature1,
     return 0.81f * temperature + 0.01f * humidity * (0.99f * temperature - 14.3f) + 46.3f;
 }
 
+float calculateWetBulb(float temperature, float humidity) {
+    float Tw = temperature * atan(0.151977 * sqrt(humidity + 8.313659)) 
+             + atan(temperature + humidity) 
+             - atan(humidity - 1.676331) 
+             + 0.00391838 * pow(humidity, 1.5) * atan(0.023101 * humidity) 
+             - 4.686035;
+    return Tw;
+}
+
+// 屋外用 WBGT 推定計算
+float calculate_wbgt_outdoor(float Td1, float Td2, float RH, float pressure_hPa)
+{
+    float Td = (Td1 + Td2) / 2.0f;
+    float Tw = calculateWetBulb(Td, RH);
+
+    // 日射による黒球温度上昇分の補正（標準的な日光直射下を仮定）
+    float deltaT = 3.0 * (1013.25 / pressure_hPa); 
+    float Tg = Td + deltaT; // 黒球温度の推定
+    
+    // 屋外 WBGT 式: 0.7*Tw + 0.2*Tg + 0.1*Td
+    float wbgt = 0.7 * Tw + 0.2 * Tg + 0.1 * Td;
+    return wbgt;
+}
+
+// 室内用 WBGT 推定計算
+float calculate_wbgt_indoor(const float humidity, const float temperature1, const float temperature2)
+{
+    float temperature = (temperature1 + temperature2) / 2.0f;
+    float Tw = calculateWetBulb(temperature, humidity);
+    float wbgt = 0.7 * Tw + 0.3 * temperature;    // 屋内では Tg ≒ temperature
+
+    return wbgt;
+}
+
+int getWBGTColor(float wbgt)
+{
+    if (wbgt >= 31.0f)
+    {
+        return TFT_MAGENTA;
+    }
+    else if (wbgt >= 28.0f)
+    {
+        return TFT_RED;
+    }
+    else if (wbgt >= 25)
+    {
+        return TFT_ORANGE;
+    }
+    else if (wbgt >= 21.0f)
+    {
+        return TFT_GREENYELLOW;
+    }
+    else
+    {
+        return TFT_WHITE;
+    }
+}
 
 int getComfortColor(float discomfortIndex)
 {
     if (discomfortIndex >= 85.0f)
     {
-        return TFT_WHITE;      
+        return TFT_MAGENTA;      
     }
     else if (discomfortIndex >= 80.0f)
     {
-        return TFT_WHITE;
+        return TFT_RED;
     }
     else if (discomfortIndex >= 75.0f)
     {
-        return TFT_WHITE;
+        return TFT_ORANGE;
     }
     else if (discomfortIndex >= 70.0f)
     {
-        return TFT_WHITE;   
+        return TFT_GREENYELLOW;
     }
     else if (discomfortIndex >= 65.0f)
     {
-        return TFT_WHITE;
+        return TFT_GREEN;
     }
     else if (discomfortIndex >= 60.0f)
     {
@@ -62,15 +119,15 @@ int getComfortColor(float discomfortIndex)
     }
     else if (discomfortIndex >= 55.0f)
     {
-        return TFT_WHITE;
+        return TFT_SKYBLUE;
     }
     else if (discomfortIndex >= 50.0f)
     {
-        return TFT_WHITE;
+        return TFT_BLUE;
     }
     else
     {
-        return TFT_WHITE;
+        return TFT_NAVY;
     }
 }
 
@@ -171,9 +228,9 @@ void showDisplay(float temperature, float temperature2, float humidity, float pr
         // --- 現在のセンサ値を表示する ---
         M5.Display.setCursor(0, 0);
         M5.Display.setTextColor(TFT_WHITE, TFT_BLACK);
-        M5.Display.printf(" = センサ値 =\n");
+        //M5.Display.printf(" = センサ値 =\n");
 
-        int posY = 6;
+        int posY = -15;
         posY = posY + marginY;
         M5.Display.setCursor(0, posY);
         if (temperature > -273.0f)
@@ -200,9 +257,21 @@ void showDisplay(float temperature, float temperature2, float humidity, float pr
         }
 
         float thi = 0.0f;
-        if ((humidity > 0.0f)&&(temperature > -273.0f))
+        float wbgt_outdoor = 0.0f;
+        float wbgt_indoor = 0.0f;
+        if ((humidity > 0.0f)&&(temperature > -273.0f)&&(temperature2 > -273.0f))
         {
             thi = calculate_discomfort_index(humidity, temperature, temperature2);
+            wbgt_outdoor = calculate_wbgt_outdoor(temperature, temperature2, humidity, (pressure * 0.01f));
+            wbgt_indoor = calculate_wbgt_indoor(humidity, temperature, temperature2);
+        }
+
+        if (wbgt_indoor > 0.0f)
+        {
+            M5.Display.setTextColor(getWBGTColor(wbgt_indoor), TFT_BLACK);
+            posY = posY + marginY + 4;
+            M5.Display.setCursor(0, posY);
+            M5.Display.printf("WGBT: %.0f\n", wbgt_indoor);
         }
 
         if (thi > 0.0f)
@@ -237,10 +306,15 @@ void sendSerialValue(float temperature, float temperature2, float humidity, floa
     {
         Serial.printf("気圧   : %.2f hPa\n", pressure * 0.01f);
     }
-    if ((humidity > 0.0f)&&(temperature > -273.0f))
+    if ((humidity > 0.0f)&&(temperature > -273.0f)&&(temperature2 > -273.0f))
     {
         float thi = calculate_discomfort_index(humidity, temperature, temperature2);
         Serial.printf("不快指数 : %.0f\n", thi);
+
+        float wbgt_outdoor = calculate_wbgt_outdoor(temperature, temperature2, humidity, (pressure * 0.01f));
+        float wbgt_indoor = calculate_wbgt_indoor(humidity, temperature, temperature2);
+        Serial.printf("WGBT(屋外) : %.0f\n", wbgt_outdoor);
+        Serial.printf("WGBT(日陰) : %.0f\n", wbgt_indoor);
     }
     Serial.println("");
 }
@@ -282,7 +356,8 @@ void parseSensorValue()
 }
 
 
-void loop() {
+void loop()
+{
     M5.update();
     Units.update(); // 登録された全ユニットの値を一括更新
 
