@@ -1,3 +1,8 @@
+//
+//   Unit Env III (https://docs.m5stack.com/ja/unit/envIII)
+//
+//    * 不快指数、WBGT（熱中症指数）の計算を行う
+//
 #include <M5Unified.h>
 #include <M5UnitUnified.h>
 #include <M5UnitUnifiedENV.h>
@@ -21,11 +26,13 @@ m5::unit::UnitUnified Units;
 
 int count = 0;
 
+//  高度の計算
 float calculate_altitude(const float pressure, const float seaLvhPa = 1013.25f)
 {
     return 44330.f * (1.0f - pow((pressure / 100.f) / seaLvhPa, 0.1903f));
 }
 
+//  不快指数の計算
 float calculate_discomfort_index(const float humidity, const float temperature1, const float temperature2)
 {
     float temperature = (temperature1 + temperature2) / 2.0f;
@@ -33,6 +40,7 @@ float calculate_discomfort_index(const float humidity, const float temperature1,
     return 0.81f * temperature + 0.01f * humidity * (0.99f * temperature - 14.3f) + 46.3f;
 }
 
+//  湿球温度 Tw の計算 (Stull の式)
 float calculateWetBulb(float temperature, float humidity) {
     float Tw = temperature * atan(0.151977 * sqrt(humidity + 8.313659)) 
              + atan(temperature + humidity) 
@@ -42,7 +50,7 @@ float calculateWetBulb(float temperature, float humidity) {
     return Tw;
 }
 
-// 屋外用 WBGT 推定計算
+//  屋外用 WBGT 推定計算
 float calculate_wbgt_outdoor(float Td1, float Td2, float RH, float pressure_hPa)
 {
     float Td = (Td1 + Td2) / 2.0f;
@@ -57,7 +65,7 @@ float calculate_wbgt_outdoor(float Td1, float Td2, float RH, float pressure_hPa)
     return wbgt;
 }
 
-// 室内用 WBGT 推定計算
+//  室内用 WBGT 推定計算
 float calculate_wbgt_indoor(const float humidity, const float temperature1, const float temperature2)
 {
     float temperature = (temperature1 + temperature2) / 2.0f;
@@ -67,6 +75,7 @@ float calculate_wbgt_indoor(const float humidity, const float temperature1, cons
     return wbgt;
 }
 
+// WBGTの色表現
 int getWBGTColor(float wbgt)
 {
     if (wbgt >= 31.0f)
@@ -91,6 +100,7 @@ int getWBGTColor(float wbgt)
     }
 }
 
+//  不快指数の色表現
 int getComfortColor(float discomfortIndex)
 {
     if (discomfortIndex >= 85.0f)
@@ -131,7 +141,7 @@ int getComfortColor(float discomfortIndex)
     }
 }
 
-
+//  不快指数の目安メッセージ
 char *getComfort(float discomfortIndex)
 {
     if (discomfortIndex >= 85.0f)
@@ -183,7 +193,7 @@ void setup()
 
     M5.Display.init();
     M5.Display.setFont(&fonts::lgfxJapanGothicP_16);
-    M5.Display.setRotation(1);
+    M5.Display.setRotation(2);  // 表示を180度回転させる
     M5.Display.setTextSize(1);
     M5.Display.setTextColor(TFT_LIGHTGREY, TFT_BLACK);
     M5.Display.println("初期化中");
