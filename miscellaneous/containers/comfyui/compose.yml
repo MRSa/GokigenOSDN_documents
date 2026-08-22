@@ -1,0 +1,26 @@
+services:
+  comfy:
+    build:
+      context: container
+    container_name: comfy
+    #runtime: nvidia
+    environment:
+      TZ: "Asia/Tokyo"
+      NVIDIA_DRIVER_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: all
+    volumes:
+      - ./repository:/repository
+      - ./repository/ComfyUI-Manager:/repository/ComfyUI/custom_nodes/ComfyUI-Manager
+      - ./input:/repository/ComfyUI/input
+      - ./models:/repository/ComfyUI/models
+      - ./output:/repository/ComfyUI/output
+    restart: always
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+    ports:
+      - "8188:8188"

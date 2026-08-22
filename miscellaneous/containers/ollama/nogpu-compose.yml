@@ -1,0 +1,27 @@
+services:
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    restart: always
+    ports:
+      - "11434:11434"
+    environment:
+      OLLAMA_FLASH_ATTENTION: 1
+      OLLAMA_KV_CACHE_TYPE: q8_0
+      OLLAMA_CONTEXT_LENGTH: 8192
+    volumes:
+      - ./ollama:/root/.ollama
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    ports:
+      - "8180:8080"
+    environment:
+      WEBUI_SECRET_KEY: ''
+      WEBUI_AUTH: False
+    volumes:
+      - ./open-webui:/app/backend/data
+    extra_hosts:
+      - host.docker.internal:host-gateway
+

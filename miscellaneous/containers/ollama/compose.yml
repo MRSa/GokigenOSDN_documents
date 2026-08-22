@@ -1,0 +1,84 @@
+networks:
+  default:
+    name: ollama
+services:
+  ollama:
+    container_name: ollama
+    image: ollama/ollama
+    #image: ollama/ollama:0.32.1
+    restart: always
+    ports:
+      - "11434:11434"
+    volumes:
+      - ./ollama:/root/.ollama
+    environment:
+      gpus: all
+      OLLAMA_FLASH_ATTENTION: 1
+      OLLAMA_KV_CACHE_TYPE: q8_0
+      #OLLAMA_CONTEXT_LENGTH: 81920
+      #OLLAMA_CONTEXT_LENGTH: 65536
+      #OLLAMA_CONTEXT_LENGTH: 98304
+      OLLAMA_CONTEXT_LENGTH: 102400
+      #OLLAMA_CONTEXT_LENGTH: 114688
+      #OLLAMA_CONTEXT_LENGTH: 122880
+      #OLLAMA_CONTEXT_LENGTH: 131072
+      #OLLAMA_CONTEXT_LENGTH: 262144
+      OLLAMA_MAX_LOADED_MODELS: 1
+      OLLAMA_MAX_PARALLEL: 1
+      #OLLAMA_NEW_ENGINE: false
+      OLLAMA_NEW_ENGINE: true
+      LLAMA_ARG_FIT_TARGET: 1024
+      #LLAMA_ARG_FIT_TARGET: 512
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+
+  open-webui:
+    container_name: open-webui
+    image: ghcr.io/open-webui/open-webui:main
+    ports:
+      - "8180:8080"
+    depends_on:
+      - ollama
+      - searxng
+    environment:
+      WEBUI_SECRET_KEY: ''
+      WEBUI_AUTH: False
+      ENABLE_WEB_SEARCH: True
+      WEB_SEARCH_ENGINE: searxng
+      SEARXNG_QUERY_URL: http://xxx.xxx.xxx.xxx:zzzz/search?q=<query>
+    volumes:
+      - ./open-webui:/app/backend/data
+    extra_hosts:
+      - host.docker.internal:host-gateway
+
+  searxng:
+    container_name: searxng
+    image: searxng/searxng:latest
+    ports:
+      - "8889:8080"
+    volumes:
+      - ./searxng/config:/etc/searxng
+      - ./searxng/data:/var/cache/searxng 
+    restart: always
+    environment:
+      SEARXNG_BASE_URL: http://xxx.xxx.xxx.xxxx:zzzz
+      SEARXNG_HOSTNAME: "xxx.xxx.xxx.xxx:zzzz/" 
+    networks:
+      - default
+    depends_on:
+      - valkey
+
+  valkey:
+    container_name: searxng-valkey
+    image: valkey/valkey:9-alpine
+    command: valkey-server --save 30 1 --loglevel warning
+    restart: always
+    networks:
+      - default
+    volumes:
+      - ./valkey:/data
