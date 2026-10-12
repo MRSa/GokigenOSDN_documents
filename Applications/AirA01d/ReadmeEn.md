@@ -408,7 +408,7 @@ The following operations are available:
 - **Export** : Exports the specified local file to external storage.
 - **Import** : Copies a file from external storage to a local file.
 
-![カメラプロパティ操作](images/camera_property_operations.png)
+![Camera Properties Operations](images/camera_property_operations.png)
 
 ### Digital Zoom Button
 
