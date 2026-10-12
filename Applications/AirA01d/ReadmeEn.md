@@ -720,6 +720,8 @@ AirA01d specifies and uses the following permissions. The app will request these
 
 ### Change Log
 
+- 1.6.1: Added to pull and apply camera properties to local files.
+- 1.6.0: Added to display Exif information for captured images and to batch-download multiple selected images.
 - 1.5.0 : Added captured image list screen and image retrieval functionality from the camera.
 - 1.1.0 : Added digital zoom, and reference/setting functionality for camera properties.
 - 1.0.0 : Initial version created.
