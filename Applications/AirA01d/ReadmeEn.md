@@ -43,7 +43,7 @@
     - [Drive Mode Button](#drive-mode-button)
     - [Focus Mode (AF/MF) Button](#focus-mode-afmf-button)
     - [AF Unlock / Center Focus Button](#af-unlock--center-focus-button)
-    - [Image Tuning Button (Currently Unused)](#image-tuning-button-currently-unused)
+    - [Camera Properties Operations Button](#camera-properties-operations-button)
     - [Digital Zoom Button](#digital-zoom-button)
     - [Aspect Ratio Button](#aspect-ratio-button)
     - [RAW Shooting ON/OFF Button](#raw-shooting-onoff-button)
@@ -196,7 +196,7 @@ The layout of buttons varies slightly between portrait and landscape orientation
 - **r : Drive Mode**
 - **s : Focus Mode (AF/MF)**
 - **t : AF Unlock / Center Focus**
-- **u : (Currently Unused)**
+- **u : Camera Properties Operations**
 - **v : Digital Zoom**
 - **w : Aspect Ratio**
 - **x : RAW Shooting ON/OFF**
@@ -395,9 +395,20 @@ Unlocks the auto focus lock, or performs a center focus on the middle of the scr
 
 ![Center Focus](images/focus_button.png)
 
-### Image Tuning Button (Currently Unused)
+### Camera Properties Operations Button
 
-Currently unused. I plan to implement image customization here.
+You can read settings (camera properties) from the camera and save them to a local file, or apply settings from a local file to the camera. This feature is designed for scenarios where you store camera shooting settings in a local file and transfer them to the camera whenever needed.
+
+The following operations are available:
+
+- **Pull** : Retrieves camera properties from the camera and saves them to the specified local file. This button is only enabled when connected to the camera.
+- **Apply** : Transfers camera properties from the specified local file to the camera. This button is only enabled when connected to the camera.
+- **Delete** : Deletes the specified local file.
+- **Rename** : Renames the specified local file.
+- **Export** : Exports the specified local file to external storage.
+- **Import** : Copies a file from external storage to a local file.
+
+![カメラプロパティ操作](images/camera_property_operations.png)
 
 ### Digital Zoom Button
 
